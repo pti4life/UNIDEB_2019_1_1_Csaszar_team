@@ -3,6 +3,20 @@ Lottószimulátor Projekt
 Követelményspecifikáció
 
 1. Vezetői összefoglaló
+
+A szerencsejáték mindig is egy veszélyes hobbi volt, nemhiába szigorúan
+18 éves kor felettiek vehetik igénybe. Ameddig a szerencsejátékra egy hobbiként,
+szórakozásként tekintünk és nem pénzszerzési lehetőségként tekintünk rá addig csekély 
+az esély függőség kialakulására. Mindenesetre a kóros játékszenvedély 
+komoly anyagi romlást idézhet elő, megváltozik a függő személyisége és a 
+környezetére is rossz hatással lehet. A program célja a lottózással párhuzamba
+hozható szenvedélybetegség megelőzése. A program felhasználói szimulálhatnak 
+tetszőleges számú "lottó játékot" (számok választása - sorsolás) ezáltal
+saját magukon tapasztalhatják meg, hogy a lottózás inkább alkalmas jelentős
+mennyiségű pénz elveszítésére mintsem pénzkeresésre. 
+
+
+
 2. Jelenlegi helyzet
 3. Vágyálom rendszer
 4. Jelenlegi üzleti folyamatok
