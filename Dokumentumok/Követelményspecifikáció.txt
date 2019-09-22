@@ -44,6 +44,7 @@ nyerés esélye hihetetlenül kicsit, még ha az ember el is viszi a fődíjat m
 évig javul tőle jelentősen az élete. 
 
 5. Igényelt üzleti feladatok
+
 Igényelnénk egy "welcome" ablakot, ahol a felhasználónak választania kell 
 a fülek közül: 
 -új szelvény
@@ -53,3 +54,27 @@ a fülek közül:
 Valamint ezek mellet a képernyőn még meg kell jelennie valahol egy vissza a
 kezdőlapra gombnak, ami a welcome ablakot hozza vissza. Ezek mellett minden 
 panelt/ablakot dekorálhatja a cég logója.
+Fülek leírása:
+-új szelvény:
+Kérje be a program, hogy: hány darab szelvényt venne a felhasználó, mennyi
+pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen megtalálható 
+még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a
+vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló
+összeg az új összeg legyen megjelenítve.
+-történet:
+Táblázatban jelenjenek meg az addig lezajlott tranzakciók. A táblában a következő
+adatok szerepeljenek: a tranzakció dátuma, a szelvények száma, fizetett összeg,
+nyereség (ha veszített, az aktuális tranzakcióban vásárolt szelvényeken, akkor 
+a vesztett pénzösszeg jelenjen meg "-" jelzővel).
+-statisztika:
+A képernyőn meg kell hogy jelenjenek a következő adatok: összesen eddig
+megvásárolt szelvények száma, összesen eddig elköltött pénz, a nyertes szelvények
+száma, a vesztes szelvények száma, összes eddig nyereség, valamint az eddig veszteségek.
+Ezeket az adatokat valamilyen diagram segítségével ábrázolni is kell, amennyiben 
+belefér a határidőbe.
+-mennyit kell vennem?:
+Ez a fül tartalmazzon egy kalkulátort, ami kiszámolja hány darab szelvényt
+kell vennie a felhasználónak, hogy x% (felhasználó által adott érték) esélye
+legyen nyerni valamelyikkel, ha mindegyiken más kombinációt adott meg.
+Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabszámot
+adja meg, akkor jelenjen meg mennyi esélye van nyerni.
