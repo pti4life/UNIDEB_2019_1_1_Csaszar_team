@@ -49,3 +49,24 @@ nyerés esélye hihetetlenül kicsit, még ha az ember el is viszi a fődíjat m
 évig javul tőle jelentősen az élete. 
 
 5. Igényelt üzleti feladatok
+Igényelnénk egy "welcome" ablakot, ami a felhasználó bejelentkezési adatait
+kéri. Alatta egy regisztráció gombot, ha valaki regisztrálni szeretne. 
+Ezt a gombot megnyomva a program regisztrációs adatokat kell kérjen, amit
+az adatbázisban kell elmenteni. 
+Amint a felhasználó bejelentkezett választania kell a fülek közül: 
+-új szelvény
+-történet
+-statisztika
+-mennyit kell vennem?
+-beálítások
+Valamint ezek mellet a képernyőn még meg kell jelennie valahol egy kijelentkezés
+gombnak, ami a welcome ablakot hozza vissza. Ezek mellett minden panelt/ablakot 
+dekorálhatja a cég logója.
+Fülek leírása:
+-új szelvény:
+Kérje be a program, hogy: hány darab szelvényt venne a felhasználó, mennyi
+pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen megtalálható 
+még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a
+vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló
+összeg az új összeg legyen megjelenítve.
+-történet:
