@@ -21,11 +21,6 @@ az esély függőség kialakulására. Mindenesetre a kóros játékszenvedély
 komoly anyagi romlást idézhet elő, megváltozik a függő személyisége és a 
 környezetére is rossz hatással lehet. Mindezek ellenére sokan látják ebben a gyors 
 meggazdagosás lehetőségét, viszont statisztikailag látható, hogy erre nagyon kevés az esély.
-Tehát miután, a lottozás és egyéb szerencsejátékok, csak szorakazási célból működnek 
-egészségesen egy ember életében, így nincs semmi értelme valós pénz elköltésére.
-Programunk pontosan ezt a problémakört érinti, és erre nyújt megoldást, az által, hogy 
-a felhasználó valós pénz költése nélkül ( eltekintve az alkalmazás  vételi árától ), részt
-vehessen ugyanabban az addiktív élményben amit a lottózás nyújt.
 
 3. Vágyálom rendszer
 
@@ -58,27 +53,3 @@ a fülek közül:
 Valamint ezek mellet a képernyőn még meg kell jelennie valahol egy vissza a
 kezdőlapra gombnak, ami a welcome ablakot hozza vissza. Ezek mellett minden 
 panelt/ablakot dekorálhatja a cég logója.
-Fülek leírása:
--új szelvény:
-Kérje be a program, hogy: hány darab szelvényt venne a felhasználó, mennyi
-pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen megtalálható 
-még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a
-vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló
-összeg az új összeg legyen megjelenítve.
--történet:
-Táblázatban jelenjenek meg az addig lezajlott tranzakciók. A táblában a következő
-adatok szerepeljenek: a tranzakció dátuma, a szelvények száma, fizetett összeg,
-nyereség (ha veszített, az aktuális tranzakcióban vásárolt szelvényeken, akkor 
-a vesztett pénzösszeg jelenjen meg "-" jelzővel).
--statisztika:
-A képernyőn meg kell hogy jelenjenek a következő adatok: összesen eddig
-megvásárolt szelvények száma, összesen eddig elköltött pénz, a nyertes szelvények
-száma, a vesztes szelvények száma, összes eddig nyereség, valamint az eddig veszteségek.
-Ezeket az adatokat valamilyen diagram segítségével ábrázolni is kell, amennyiben 
-belefér a határidőbe.
--mennyit kell vennem?:
-Ez a fül tartalmazzon egy kalkulátort, ami kiszámolja hány darab szelvényt
-kell vennie a felhasználónak, hogy x% (felhasználó által adott érték) esélye
-legyen nyerni valamelyikkel, ha mindegyiken más kombinációt adott meg.
-Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabszámot
-adja meg, akkor jelenjen meg mennyi esélye van nyerni.

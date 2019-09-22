@@ -25,6 +25,22 @@ Ezek az adatok látva a játékos könnyebben levonhatja azt a konzekvenciát mi
 a lottózás alkalmatlan pénzkeresésre.
 
 2. Jelenlegi helyzet
+
+A szerencsejáték mindig is egy veszélyes hobbi volt, nemhiába szigorúan
+18 éves kor felettiek vehetik igénybe, és az állam legútobbi szigorítása, miszerint
+csak kézpénzel vásárolható lottószelvény sem segített a kialakult helyzeten .
+Ameddig a szerencsejátékra egy hobbiként,szórakozásként tekintünk 
+és nem pénzszerzési lehetőségként tekintünk rá addig csekély 
+az esély függőség kialakulására. Mindenesetre a kóros játékszenvedély 
+komoly anyagi romlást idézhet elő, megváltozik a függő személyisége és a 
+környezetére is rossz hatással lehet. Mindezek ellenére sokan látják ebben a gyors 
+meggazdagosás lehetőségét, viszont statisztikailag látható, hogy erre nagyon kevés az esély.
+Tehát miután, a lottozás és egyéb szerencsejátékok, csak szorakazási célból működnek 
+egészségesen egy ember életében, így nincs semmi értelme valós pénz elköltésére.
+Programunk pontosan ezt a problémakört érinti, és erre nyújt megoldást, az által, hogy 
+a felhasználó valós pénz költése nélkül ( eltekintve az alkalmazás  vételi árától ), részt
+vehessen ugyanabban az addiktív élményben amit a lottózás nyújt.
+
 3. Vágyálom rendszer
 
 - A program grafikus interfészén lehetőség lesz átváltani egy "statisztikák" menüpontra, 
