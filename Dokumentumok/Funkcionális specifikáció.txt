@@ -1,4 +1,4 @@
-Lottószimulátor Projekt
+﻿Lottószimulátor Projekt
 
 Funkcionális specifikáció
 
@@ -8,6 +8,8 @@ Ennek a programnak a célja a tudatos lottózásra való ösztönzés illetve
 szimplán csak a szórakozás,kíváncsiság. 
 Felmerülő problémák:
   - Szerencsejáték szenvedély kialakulása a lottózással kapcsolatosan.
+  - A játékosok már nem szorakozás, hanem pénzszerzési lehetőséget látnak
+   a lottó tipusú játékokban.
   - A lottózók nem kapnak statisztikát arról, hogy mennyit költenek 
     és mennyit nyereséget hoz nekik a szerencsejáték így hajlamosabbak
     a mértéktelen játékra.
@@ -15,6 +17,10 @@ A program részben megoldást biztosíthat ezekre a problémákra. A játékos
 egy virtuális környezetben tudja szimulálni a "lottózást" és egyidőben
 látja a megtett szelvények darabszámát, ennek megfelően a játékra
 költött pénzt, a nyert össszeget, a hasznot és egyéb "real-time" statisztikákat.
+Fontos, hogy a személyek akiknél szerencsejáték függöség alakult ki, ne csak
+a lottózók által tipikusan hangsúlyozott, statisztikával találkozzon miszerint a 
+nyerési esély például 1:3.362.260 -hoz (skandináv lotto nyerési esélyei) , hanem 
+egyéb komplex, a lottózok által nem publikált adatokat, és statiszikákat is megkapjon.
 Ezek az adatok látva a játékos könnyebben levonhatja azt a konzekvenciát miszerint
 a lottózás alkalmatlan pénzkeresésre.
 
