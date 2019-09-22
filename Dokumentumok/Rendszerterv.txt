@@ -35,8 +35,8 @@ csak a szórakozás, kíváncsiság.
 
 3. Üzleti folyamatok modellje: 
 
-
--Üzleti szereplők: csakis azon felhasználók akik használják a programot 
+-Üzleti szereplők: 
+	csakis azon felhasználók akik használják a programot 
 
 -Üzleti folyamatok:
 	A megtett számokat beolvassuk és random generált számmokkal összvetve a felhasználónak
@@ -83,18 +83,52 @@ csak a szórakozás, kíváncsiság.
 
 
 4. Követelmények: 
-	
+
 5. Funkcionális terv:
+-Képernyőtervek: A felhasználó az ablak alján lévő mezőben adhatja meg a megtenni kívánt számokat és 
+    a mellette lévő gombbal véglegesítheti és új szelvény kérni. A szelvény eredményét a középen lévő dobozban láthatja, 
+    a nyert vagy vesztett pontok és eltalált számokkal egyetemben. A játékválasztó gomb segítségével 
+	a különböző lottó fajták közül választhat a felhasználó.
+	A jobb felül elhelyezkedő statisztika és történet gombokon átvált a felhasználó statisztikikáihoz, 
+	ahol az eddig megnyert és elvesztett pontokat, találatokat és oszlopdiagrammokat láthat.
 
 6. Fizikai környezet: 
+-Fejlesztő eszközök: Visual Studio Code, Eclipse
+-Keretrendszer: Swing
 
 7. Absztrakt domain modell: 
+-Domain specifikáció, fogalmak
+-Absztrakt komponensek, ezek kapcsolatai
 
 8. Architekturális terv:
 
 9. Adatbázis terv: 
 
 10. Implementációs terv: 
+Fülek leírása:
+-új szelvény:
+Kérje be a program, hogy: hány darab szelvényt venne a felhasználó, mennyi
+pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen megtalálható 
+még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a
+vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló
+összeg az új összeg legyen megjelenítve.
+-történet:
+Táblázatban jelenjenek meg az addig lezajlott tranzakciók. A táblában a következő
+adatok szerepeljenek: a tranzakció dátuma, a szelvények száma, fizetett összeg,
+nyereség (ha veszített, az aktuális tranzakcióban vásárolt szelvényeken, akkor 
+a vesztett pénzösszeg jelenjen meg "-" jelzővel).
+-statisztika:
+A képernyőn meg kell hogy jelenjenek a következő adatok: összesen eddig
+megvásárolt szelvények száma, összesen eddig elköltött pénz, a nyertes szelvények
+száma, a vesztes szelvények száma, összes eddig nyereség, valamint az eddig veszteségek.
+Ezeket az adatokat valamilyen diagram segítségével ábrázolni is kell, amennyiben 
+belefér a határidőbe.
+-mennyit kell vennem?:
+Ez a fül tartalmazzon egy kalkulátort, ami kiszámolja hány darab szelvényt
+kell vennie a felhasználónak, hogy x% (felhasználó által adott érték) esélye
+legyen nyerni valamelyikkel, ha mindegyiken más kombinációt adott meg.
+Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabszámot
+adja meg, akkor jelenjen meg mennyi esélye van nyerni.
 
 11. Tesztterv: 
 
