@@ -1,5 +1,14 @@
 1. A rendszer célja: 
 	
+A program célja a lottózással párhuzamba hozható szenvedélybetegség megelőzése. 
+A felhasználók szimulálhatnak tetszőleges számú "lottó játékot" (számok választása - sorsolás) 
+ezáltal saját magukon tapasztalhatják meg, hogy a lottózás inkább alkalmas jelentős
+mennyiségű pénz elveszítésére mintsem pénzkeresésre, mivel egyidőben
+látják a megtett szelvények darabszámát, ennek megfelelően a játékra
+költött pénzt, a nyert össszeget, a hasznot és egyéb "real-time" statisztikákat. 
+Ezek mellett a program célja a tudatos lottózásra való ösztönzés illetve szimplán 
+csak a szórakozás, kíváncsiság. 
+
 2. Projekt terv: 
 
 	Projekt:Lotttószimulátor.
@@ -26,6 +35,22 @@
 
 3. Üzleti folyamatok modellje: 
 
+
+-Üzleti szereplők: csakis azon felhasználók akik használják a programot 
+
+-Üzleti folyamatok:
+	A megtett számokat beolvassuk és random generált számmokkal összvetve a felhasználónak
+    megjelenítjük az elért eredményt.
+    A lejátszott játékokról pontok és adatok tárolása.
+	Az adatok alapján statisztikát és grafikonokat jelenítünk meg.
+
+-Üzleti entitások:
+	JTextField: itt adják meg a felhasználók a megtenni kívánt számokat
+	JTextPane: az adott játék eredménye, pontok mennyiségének változása.
+	JButton: statisztika mód és fő panel közötti váltása. megtett számok véglegesítése
+	JComboBox: játékmód kiválasztása
+	Jfreechart: grafikonok vizualizálása
+
 		                         
 	FELHASZNÁLÓ                   
 	     |		                  			
@@ -51,6 +76,10 @@ FELHASZNÁLÓ DÖNT, HOGY ----folytatja----
  	     |
  	    \|/
  PROGRAM BEZÁRÓDIK
+
+
+4. Követelmények: 
+
 
 4. Követelmények: 
 	
