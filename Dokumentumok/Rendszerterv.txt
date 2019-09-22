@@ -56,12 +56,13 @@ csak a szórakozás, kíváncsiság.
 	     |		                  			
 	     |                        
 	    \|/	  /	                 
-	 SORSOLÁS -------------------------
-	     |	  \		                   |	
-	 	 |			                   |	  
-	 	\|/			                   | 	   	
-FELHASZNÁLÓ DÖNT, HOGY ----folytatja----  
- KILÉP VAGY FOLYTATJA
+	 SORSOLÁS -------------------------|
+	     |	  \		           |	
+	     |			           |	  
+	    \|/			           | 	   	
+     FELHASZNÁLÓ DÖNT, HOGY                | 
+     KILÉP VAGY FOLYTATJA   ----folytatja--|
+ 	     |
  	     |
  	     |
  	     |
@@ -75,7 +76,7 @@ FELHASZNÁLÓ DÖNT, HOGY ----folytatja----
  	     |
  	     |
  	    \|/
- PROGRAM BEZÁRÓDIK
+      PROGRAM BEZÁRÓDIK
 
 
 4. Követelmények: 
