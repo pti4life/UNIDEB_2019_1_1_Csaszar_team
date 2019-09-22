@@ -11,26 +11,28 @@ csak a szórakozás, kíváncsiság.
 
 2. Projekt terv: 
 
-	Projekt:Lotttószimulátor.
+     Projekt:Lotttószimulátor.
 
-		Projekt szerepkörök, felelősségek, erőforrások
-			A projekt elkészítésért 4 junior programozó felelős, (Kállai Roland, Bodnár Csaba, Szűcs Gergő, Hidi Erik Zoltán), a szerepkörök, felelősségek a specifikálásra kerülnek a továbbiakban. A projekt kisméretűségéből adódóan, a szerepkörök között átfedések lehetnek.
+       Projekt szerepkörök, felelősségek, erőforrások
+         A projekt elkészítésért 4 junior programozó felelős, (Kállai Roland, Bodnár Csaba, Szűcs Gergő, Hidi Erik Zoltán), a szerepkörök, felelősségek a specifikálásra kerülnek a továbbiakban. A projekt kisméretűségéből adódóan, a szerepkörök között átfedések lehetnek.
 
-			Front End fejlesztő: Szűcs Gergő, Bodnár Csaba: Az alkalmazás kinézetéért felelős szakember, a front end megjeleníti az információt a felhasználónak.
+	 Front End fejlesztő: Szűcs Gergő, Bodnár Csaba: Az alkalmazás kinézetéért felelős szakember, a front end megjeleníti az információt a felhasználónak.
 			
-			Back End fejlesztő: Kállai Roland, Hidi Erik Zoltán: A szerveren futó logika megírásáért felel pl.: Üzleti logika, Adatbázis modell.
+	 Back End fejlesztő: Kállai Roland, Hidi Erik Zoltán: A szerveren futó logika megírásáért felel pl.: Üzleti logika, Adatbázis modell.
 
-			A tesztelést tekintettel a kis projektre nem nevezünk ki külön embert, egymás között megosztva tesztelünk.
+	 A tesztelést tekintettel a kis projektre nem nevezünk ki külön embert, egymás között megosztva tesztelünk.
 			
 
-		Ütemterv, Mérföldkövek:
-			1. A projekt 2019.09.09.-én kezdődött, és a határidő 2019.09.30.
-				A szoftver implementációjára és teljes teszteleséig hátralévő időszak 14 nap. 
-			2. A dokumentáció elkészítése 2019.09.23-ra befejezésre kerül, ekkora elérhetőek a következő dokumentumok:
-				a, Követelmény specifikáció
-				b, Funkcionális specifikáció
-				c, Jelenleg is még folyamatban lévő rendszerterv
-			3. 2019.09.30-ra elérhető a teljes rendszer tesztelve, átadás megegyezés szerint 2019. szeptember 30.-a után.
+      Ütemterv, Mérföldkövek:
+	1. A projekt 2019.09.09.-én kezdődött, és a határidő 2019.09.30.
+	   A szoftver implementációjára és teljes teszteleséig hátralévő időszak 14 nap. 
+	
+	2. A dokumentáció elkészítése 2019.09.23-ra befejezésre kerül, ekkora elérhetőek a következő dokumentumok:
+	   a, Követelmény specifikáció
+	   b, Funkcionális specifikáció
+	   c, Jelenleg is még folyamatban lévő rendszerterv
+	
+	3. 2019.09.30-ra elérhető a teljes rendszer tesztelve, átadás megegyezés szerint 2019. szeptember 30.-a után.
 			
 
 3. Üzleti folyamatok modellje: 
@@ -80,13 +82,18 @@ csak a szórakozás, kíváncsiság.
 
 
 4. Követelmények: 
-
-
-4. Követelmények: 
 	
 5. Funkcionális terv:
 
 6. Fizikai környezet: 
+   
+  Az alkalmazás JavaFX platformon kerül megvalósításra ennek következtében a 
+  végeredmény egy asztali alkalmazás lesz. A megvalósítás Intellij Community
+  Netbeans, Eclipse fejlesztői környezetek használatával történik.
+  Az alkalmazás fejlesztése során csak is open source függőségeket tartalmazhat. 
+  Mivel a szoftver nem csatlakozik hálózathoz ezért tűzfal vagy egyéb hálózattal 
+  kapcsolatos tudnivaló nincs. Az alkalmazás futtatásához szükséges a Java 11-es
+  verziója és mivel Java-ról beszélünk ezért az alkalmazás teljes mértékben platformfüggetlen.
 
 7. Absztrakt domain modell: 
 
