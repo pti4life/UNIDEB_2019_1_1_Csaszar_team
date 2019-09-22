@@ -27,10 +27,15 @@ a lottózás alkalmatlan pénzkeresésre.
 2. Jelenlegi helyzet
 3. Vágyálom rendszer
 
-A program grafikus interfészén lehetőség lesz átváltani egy "statisztikák" menüpontra, ahol oszlop- és vonaldiagramok vizualizálják az eddigi eredményeket napra/hétre/hónapra lebontva.
-Az ablak egyik sarkában egy számláló lesz elhelyezve, amely egy előre megadott értéken kezd és a felhasználónak lehetősége lesz ezt feltenni a játékokra. Az számláló negatív értéket is felvehet egy bizonyos pontig, ezzel szemléltetve az adósságot.
-A játszani kívánt lottó fajtáját egy legörülő menüből lehessen kiválasztani, a feltenni kívánt számokat pedig szövegdobozokban.
-Magát a program kódját pedig tisztán és átláthatóan kell megírni, kommenteléssel a későbbi változtatásokhoz megfelelő leírást adni.
+- A program grafikus interfészén lehetőség lesz átváltani egy "statisztikák" menüpontra, 
+  ahol oszlop- és vonaldiagramok vizualizálják az eddigi eredményeket napra/hétre/hónapra lebontva.
+- Az ablak egyik sarkában egy számláló lesz elhelyezve, amely egy előre megadott értéken kezd és 
+  a felhasználónak lehetősége lesz ezt feltenni a játékokra. Az számláló negatív értéket
+  is felvehet egy bizonyos pontig, ezzel szemléltetve az adósságot.
+- A játszani kívánt lottó fajtáját egy legörülő menüből lehessen kiválasztani, 
+  a feltenni kívánt számokat pedig szövegdobozokban.
+- Magát a program kódját pedig tisztán és átláthatóan kell megírni, kommenteléssel a későbbi 
+  változtatásokhoz megfelelő leírást adni.
 
 4. Jelenlegi üzleti folyamatok
 5. Igényelt üzleti feladatok
