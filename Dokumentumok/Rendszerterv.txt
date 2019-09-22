@@ -82,6 +82,15 @@ csak a szórakozás, kíváncsiság.
 
 
 4. Követelmények: 
+-Funkcionális követelmények:
+--A számításokban nem lehet hiba
+--Minden input lekezelve, minden lehetséges beérkező adatra
+--Minden lehetséges Exception lekezelve, nem fagyhat ki a program
+-Nem funkcionális követelmények:
+--A felhasználói felület könnyen kezelhető legyen
+--Semmilyen felesleges adat nem kerül megjelenítésre
+-Jogi követelmények:
+--A szerencsejátékokra szóló törvények figyelembe vétele
 
 
 5. Funkcionális terv:
