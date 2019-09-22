@@ -26,8 +26,34 @@
 
 3. Üzleti folyamatok modellje: 
 
-4. Követelmények: 
+		                         
+	FELHASZNÁLÓ                   
+	     |		                  			
+	     |                        
+	    \|/	  /	                 
+	 SORSOLÁS -------------------------
+	     |	  \		                   |	
+	 	 |			                   |	  
+	 	\|/			                   | 	   	
+FELHASZNÁLÓ DÖNT, HOGY ----folytatja----  
+ KILÉP VAGY FOLYTATJA
+ 	     |
+ 	     |
+ 	     |
+ 	     |
+ 	     k
+ 	     i
+ 	     l
+ 	     é
+ 	     p
+ 	     |
+ 	     |
+ 	     |
+ 	    \|/
+ PROGRAM BEZÁRÓDIK
 
+4. Követelmények: 
+	
 5. Funkcionális terv:
 
 6. Fizikai környezet: 
