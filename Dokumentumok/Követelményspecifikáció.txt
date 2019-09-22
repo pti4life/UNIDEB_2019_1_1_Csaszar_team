@@ -40,7 +40,9 @@ vehessen ugyanabban az addiktív élményben amit a lottózás nyújt.
 -Megbízható és hatékony program létrehozása személyi számítógépre.
 -A programot úgy kell elkészíteni, hogy a későbbi esetleges bővítésre mindig lehetőség legyen.
 -Olyan élvezeti funkciók, ami miatt érdemes használni a programot lottózás helyett. 
-*konktretizálni*
 
 4. Jelenlegi üzleti folyamatok
+
+Abban az esetben, ha mégis megnyeri valaki egy lottó főnyereményét azt nagyrészük hamar elkölti, nagyon kevesen fektetnek be vagy teszik félre kamatozni. Így nem elég, hogy a nyerés esélye hihetetlenül kicsit, még ha az ember el is viszi a fődíjat maximum néhény évig javul tőle jelentősen az élete. 
+
 5. Igényelt üzleti feladatok
