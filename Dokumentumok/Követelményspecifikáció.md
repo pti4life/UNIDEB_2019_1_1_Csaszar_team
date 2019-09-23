@@ -5,22 +5,25 @@
 ## 1. Vezetői összefoglaló
 
 A program célja a lottózással párhuzamba
-hozható szenvedélybetegség megelőzése. A program felhasználói szimulálhatnak 
-tetszőleges számú "lottó játékot" (számok választása - sorsolás) ezáltal
-saját magukon tapasztalhatják meg, hogy a lottózás inkább alkalmas jelentős
-mennyiségű pénz elveszítésére mintsem pénzkeresésre. 
+hozható szenvedélybetegség megelőzése azáltal hogy a felhasználó szembesül a lottózás mögött rejlő pontos statisztikával, ami úgy van megkonstruálva, hogy nyeresége csak is kizárólag a lottózás mögött álló cégnek legyen.<br>
+A program felhasználói szimulálhatnak 
+tetszőleges számú "lottó játékot" (számok választása - sorsolás) ezekkel az a cél, hogy
+saját magukon tapasztalják meg, hogy a lottózás inkább alkalmas jelentős
+mennyiségű pénz elveszítésére mintsem pénzkeresésre és a statisztikából bármilyen érdekes információkat következtessenek, szűrjenek ki.  
+
 
 ## 2. Jelenlegi helyzet
 
 A szerencsejáték mindig is egy veszélyes hobbi volt, nemhiába szigorúan
-18 éves kor felettiek vehetik igénybe, és az állam legútobbi szigorítása, miszerint
-csak kézpénzel vásárolható lottószelvény sem segített a kialakult helyzeten .
-Ameddig a szerencsejátékra egy hobbiként,szórakozásként tekintünk 
+18 éves kor felettiek vehetik igénybe, és az állam legutobbi szigorítása, miszerint
+csak készpénzel vásárolható lottószelvény sem segített a kialakult helyzeten. Az emberek amíg nem látják maguk előtt összesítve azt a pénzt amit elbuktak, és nincsenek tisztában azzal, hogy mennyire kevés esélyük van nyerni addig hajlamosak felelőtlenül, folyamatosan lottózni. Erre is megoldást nyújthat a Lottószimulátor. <br>
+Ameddig a szerencsejátékra egy hobbiként, szórakozásként tekintünk 
 és nem pénzszerzési lehetőségként tekintünk rá addig csekély 
 az esély függőség kialakulására. Mindenesetre a kóros játékszenvedély 
 komoly anyagi romlást idézhet elő, megváltozik a függő személyisége és a 
 környezetére is rossz hatással lehet. Mindezek ellenére sokan látják ebben a gyors 
-meggazdagosás lehetőségét, viszont statisztikailag látható, hogy erre nagyon kevés az esély.
+meggazdagodás lehetőségét, viszont statisztikailag látható, hogy erre nagyon kevés az esély.
+
 
 ## 3. Vágyálom rendszer
 
