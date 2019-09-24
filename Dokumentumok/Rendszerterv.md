@@ -62,33 +62,6 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
        |String(password)|
 
 
-			FELHASZNÁLÓ                   
-			|		                  			
-			|                        
-			\|/	  /	                 
-		SORSOLÁS -------------------------|
-			|	  \		           |	
-			|			           |	  
-			\|/			           | 	   	
-		FELHASZNÁLÓ DÖNT, HOGY                | 
-		KILÉP VAGY FOLYTATJA   ----folytatja--|
-			|
-			|
-			|
-			|
-			|
-			k
-			i
-			l
-			é
-			p
-			|
-			|
-			|
-			\|/
-		PROGRAM BEZÁRÓDIK
-
-
 
 ## 4. Követelmények: 
 * Funkcionális követelmények:
