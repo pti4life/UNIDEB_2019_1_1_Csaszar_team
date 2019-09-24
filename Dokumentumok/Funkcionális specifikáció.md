@@ -55,6 +55,9 @@ vehessen ugyanabban az addiktív élményben amit a lottózás nyújt.
 
 ## 4. Jelenlegi üzleti folyamatok
 
+Jelenleg a lottózás papír alapon működik, és statisztikák készítése körülményes hisz a lottó sorsolás hetente van és ezen adatok menedzselése szinte lehetetlen kézzel.
+
+![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/jelenlegi%20%C3%BCzleti%20folyamatok.jpg)
 
 ## 5. Igényelt üzleti feladatok
 
