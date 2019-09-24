@@ -48,6 +48,8 @@ nyerés esélye hihetetlenül kicsit, még ha az ember el is viszi a fődíjat m
 
 ## 5. Igényelt üzleti feladatok
 
+Elsősorban a rendszernek bejelentkezéssel védettnek kell lennie, a bejelentkezés regisztrációhoz kötött, tehát aki használni kívánja a programot annak regisztrálnia - majd bejelentkeznie kell.
+
 Igényelnénk egy "welcome" ablakot, ahol a felhasználónak választania kell 
 a fülek közül: 
 * új szelvény
