@@ -40,14 +40,27 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 
 ## 3. Üzleti folyamatok modellje: 
 
-* <b>Üzleti szereplők:</b> 
-	csakis azon felhasználók akik használják a programot 
+   * **Megvalósítandó üzleti folyamatok:**
+     * Regisztráció/bejelentkező rendszer biztosítása.
+     * A programban lehetőség legyen lottójátékok szimulálására. A felhasználó kiválasztja a számait ezután sorsolás gombra kattintva megtörténik a sorsolás.
+	 * Maguk a felhasználók, illetve az adatai hosszú idejú strukturált módon való tárolása Oracle SQL relációs adatbázisban.
 
-* <b>Üzleti folyamatok:</b>
-	A megtett számokat beolvassuk és random generált számmokkal összvetve a felhasználónak
-    megjelenítjük az elért eredményt.
-    A lejátszott játékokról pontok és adatok tárolása.
-	Az adatok alapján statisztikát és grafikonokat jelenítünk meg.
+![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/Regisztr%C3%A1ci%C3%B3.jpg)
+![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/LOTT%C3%93Z%C3%81S.jpg)
+
+   * **Üzleti Szereplők**
+     * Azon felhasználók akik használják a programot.
+   * **Üzleti Entitások**
+             
+     * <b>User</b>:A felhasználót reprezentáló perzisztens objektum.Az objektum váza:
+             
+       |User|
+       |------|
+       |int(ID)|
+       |String(name)|
+       |String(username)|
+       |String(password)|
+
 
 			FELHASZNÁLÓ                   
 			|		                  			
@@ -74,13 +87,6 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 			|
 			\|/
 		PROGRAM BEZÁRÓDIK
-
-* <b>Üzleti entitások:</b>
-	JTextField: itt adják meg a felhasználók a megtenni kívánt számokat<br>
-	JTextPane: az adott játék eredménye, pontok mennyiségének változása.<br>
-	JButton: statisztika mód és fő panel közötti váltása. megtett számok véglegesítése<br>
-	JComboBox: játékmód kiválasztása<br>
-	Jfreechart: grafikonok vizualizálása<br>
 
 
 
