@@ -4,11 +4,11 @@
 
 ## 1. Vezetői összefoglaló
 
-Ennek a programnak a célja a tudatos lottózásra való ösztönzés illetve szimplán csak a szórakozás kíváncsiság. <br> 
+Ennek a programnak a célja a tudatos lottózásra való ösztönzés illetve szimplán csak a szórakozás, kíváncsiság. <br> 
 Felmerülő problémák:
   * Szerencsejáték szenvedély kialakulása a lottózással kapcsolatosan.
-  * A játékosok már nem szorakozás, hanem pénzszerzési lehetőséget látnak
-   a lottó tipusú játékokban.
+  * A játékosok már nem szórakozás, hanem pénzszerzési lehetőséget látnak
+   a lottó típusú játékokban.
   * A lottózók nem kapnak statisztikát arról, hogy mennyit költenek 
     és mennyit nyereséget hoz nekik a szerencsejáték így hajlamosabbak
     a mértéktelen játékra.
@@ -54,7 +54,14 @@ vehessen ugyanabban az addiktív élményben amit a lottózás nyújt.
   változtatásokhoz megfelelő leírást adni.
 
 ## 4. Jelenlegi üzleti folyamatok
+
+
 ## 5. Igényelt üzleti feladatok
+
+A rendszer használatához regisztrálni kell, <br>
+  Név <br>
+  Felhasználói név <br>
+  jelszó megadásával.
 
 * A felhasználó belépés után 4 ablakból választhat (új szelvény, történet, 
 statisztika, mennyit kell vennem?)
