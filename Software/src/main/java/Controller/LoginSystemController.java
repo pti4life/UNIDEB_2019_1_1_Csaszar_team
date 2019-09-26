@@ -7,6 +7,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.sql.DriverManager;
 import java.util.ResourceBundle;
 
 public class LoginSystemController implements Initializable {
@@ -37,7 +38,6 @@ public class LoginSystemController implements Initializable {
 
     @FXML
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
 
     }
 
