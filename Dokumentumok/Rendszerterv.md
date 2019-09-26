@@ -52,7 +52,8 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
      * Azon felhasználók akik használják a programot.
    * **Üzleti Entitások**
              
-     * <b>User</b>:A felhasználót reprezentáló perzisztens objektum.Az objektum váza:
+     * <b>User</b>:A felhasználót reprezentáló perzisztens objektum.<br>
+	 Az objektum váza:
              
        |User|
        |------|
