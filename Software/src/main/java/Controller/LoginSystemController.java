@@ -12,6 +12,7 @@ import java.util.ResourceBundle;
 
 public class LoginSystemController implements Initializable {
 
+
     //SignUp
     @FXML
     TextField regName;
@@ -32,7 +33,6 @@ public class LoginSystemController implements Initializable {
 
     @FXML
     PasswordField loginPassword;
-
 
 
 
