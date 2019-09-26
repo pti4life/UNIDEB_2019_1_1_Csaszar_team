@@ -17,7 +17,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <exec.cleanupDaemonThreads>false</exec.cleanupDaemonThreads>
         <dependency.locations.enabled>false</dependency.locations.enabled>
-        <mainClass>gui.Runnable</mainClass>
+        <mainClass>initial.Runnable</mainClass>
     </properties>
 
     <developers>

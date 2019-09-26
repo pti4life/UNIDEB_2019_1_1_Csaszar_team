@@ -1,4 +1,4 @@
-package gui;
+package Controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -6,7 +6,7 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class LoginSystemController implements Initializable {
 
 
 
