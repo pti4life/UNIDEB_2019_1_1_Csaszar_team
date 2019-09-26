@@ -6,7 +6,7 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginSystemController implements Initializable {
+public class GUIController implements Initializable {
 
     @FXML
     public void initialize(URL url, ResourceBundle resourceBundle) {

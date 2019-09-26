@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.LoginSystemController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Pane fx:id="loginSystemPanes" prefHeight="400.0" prefWidth="800.0">
+        <children>
+            <Pane prefHeight="400.0" prefWidth="800.0" visible="false">
+                <children>
+                    <Text layoutX="288.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztráció">
+                        <font>
+                            <Font size="42.0" />
+                        </font>
+                    </Text>
+                    <TextField layoutX="288.0" layoutY="118.0" prefHeight="25.0" prefWidth="216.0" />
+                    <TextField layoutX="288.0" layoutY="160.0" prefHeight="25.0" prefWidth="216.0" />
+                    <PasswordField layoutX="291.0" layoutY="250.0" prefHeight="25.0" prefWidth="210.0" />
+                    <PasswordField layoutX="291.0" layoutY="208.0" prefHeight="25.0" prefWidth="210.0" />
+                    <Text layoutX="227.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Név:" textAlignment="RIGHT" wrappingWidth="51.0">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Text layoutX="170.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználói név:" textAlignment="RIGHT" wrappingWidth="114.0">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Text layoutX="170.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:" textAlignment="RIGHT" wrappingWidth="114.0">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Text layoutX="146.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó mégegyszer:" textAlignment="RIGHT" wrappingWidth="137.8359375">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Button layoutX="311.0" layoutY="287.0" mnemonicParsing="false" text="Regisztráció">
+                        <font>
+                            <Font size="20.0" />
+                        </font>
+                    </Button>
+                    <Button layoutX="21.0" layoutY="346.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="160.0" text="Vissza a bejelentkezéshez" />
+                </children>
+            </Pane>
+            <Pane prefHeight="390.0" prefWidth="806.0" visible="false">
+                <children>
+                    <Text layoutX="278.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bejelentkezés">
+                        <font>
+                            <Font size="42.0" />
+                        </font>
+                    </Text>
+                    <TextField layoutX="321.0" layoutY="115.0" prefHeight="25.0" prefWidth="204.0" />
+                    <TextField layoutX="321.0" layoutY="160.0" prefHeight="25.0" prefWidth="204.0" />
+                    <Text layoutX="203.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév:" textAlignment="RIGHT" wrappingWidth="110.24951171875">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Text layoutX="203.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:" textAlignment="RIGHT" wrappingWidth="110.24951171875">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Button layoutX="368.0" layoutY="201.0" mnemonicParsing="false" text="Bejelentkezés">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Button>
+                    <Text layoutX="146.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ha nincs még felhasználója akkor">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Text>
+                    <Text fill="#0d00ff" layoutX="381.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" IDE KATTINTVA">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Text>
+                    <Text layoutX="495.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" regisztrálhat">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Text>
+                    <TextFlow layoutX="384.0" layoutY="263.0" prefHeight="21.0" prefWidth="114.0" />
+                </children>
+            </Pane>
+        </children>
+    </Pane>
+
+</AnchorPane>
