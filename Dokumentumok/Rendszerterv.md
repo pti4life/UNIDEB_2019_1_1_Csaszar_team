@@ -111,8 +111,33 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 ## 8. Architekturális terv:
 
 ## 9. Adatbázis terv: 
+  A Debreceni Egyetem Informatika Karja biztosítja számunkra az adatbázis
+  szervert. Ez a szerver egy ORACLE SQL adatbázis környezetet futtat. A tervek
+  szerint mindössze egy táblára van szükség az adatok tárolásához. Az említett
+  tábla modellje:
 
   ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/Lottery_User.svg)
+
+  Oszlopok leírása:
+  <b>ID:</b> automatikusan generált <b>int</b> érték. Nem lehet NULL, ez a
+  Primary Key. Nem létezhet több egyforma.
+  <b>user_name:</b> a felhasználó által választott név, később szükséges
+  a bejelentkezéshez. <b>Varchar</b> érték, ami nem lehet NULL, valamint 
+  nem egyezhet más felhasználó nevével.
+  <b>pass:</b> a felhasználó által megadott jelszó Hash-elt értéke, ami 
+  <b>varchar</b>  típusként van eltárolva. Nem lehet NULL.
+  <b>bought_tickets:</b> a felhasználó által vásárolt szelvények száma. <b>Int</b>
+  típus, kezdőértéke 0.
+  <b>winner_tickets:</b> a felhasználó által vásárolt nyertes szelvények száma. 
+  <b>Int</b> típus, kezdőértéke 0. 
+  <b>credit:</b> a rendelkezésre álló kredit mennyiség. <b>Int</b> típus, 
+  kezdőértéke 1000. Az érték 24 óránként növekszik 300 kredittel.
+  <b>credit_used_up:</b> a felhasználó által elköltött kredit mennyiség. <b>Int</b> 
+  típus, kezdőértéke 0.
+  <b>credit_won:</b> kredit mennyiség, amit a felhasználó a nyertes szelvények 
+  segítségével nyert. <b>Int</b> típus, kezdőértéke 0.
+  <b>credit_lost:</b> kredit mennyiség, amit a felhasználó a vesztes szelvények 
+  vásárlási költsége miatt vesztett. <b>Int</b> típus, kezdőértéke 0.
 
 
 ## 10. Implementációs terv: 
