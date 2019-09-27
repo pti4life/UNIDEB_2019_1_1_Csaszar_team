@@ -112,6 +112,9 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 
 ## 9. Adatbázis terv: 
 
+  ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/Lottery_User.svg)
+
+
 ## 10. Implementációs terv: 
   * Menüpontok leírása:
   * <b>új szelvény:</b>
