@@ -113,6 +113,29 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 ## 9. Adatbázis terv: 
 
 ## 10. Implementációs terv: 
-
+  * Menüpontok leírása:
+  * <b>új szelvény:</b>
+Kérje be a program, hogy: hány darab szelvényt venne a felhasználó, mennyi
+pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen megtalálható 
+még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a
+vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló
+összeg az új összeg legyen megjelenítve.
+  * <b>történet:</b>
+Táblázatban jelenjenek meg az addig lezajlott tranzakciók. A táblában a következő
+adatok szerepeljenek: a tranzakció dátuma, a szelvények száma, fizetett összeg,
+nyereség (ha veszített, az aktuális tranzakcióban vásárolt szelvényeken, akkor 
+a vesztett pénzösszeg jelenjen meg "-" jelzővel).
+* <b>statisztika:</b>
+A képernyőn meg kell hogy jelenjenek a következő adatok: összesen eddig
+megvásárolt szelvények száma, összesen eddig elköltött pénz, a nyertes szelvények
+száma, a vesztes szelvények száma, összes eddig nyereség, valamint az eddig veszteségek.
+Ezeket az adatokat valamilyen diagram segítségével ábrázolni is kell, amennyiben 
+belefér a határidőbe.
+* <b>mennyit kell vennem?:</b>
+Ez a fül tartalmazzon egy kalkulátort, ami kiszámolja hány darab szelvényt
+kell vennie a felhasználónak, hogy x% (felhasználó által adott érték) esélye
+legyen nyerni valamelyikkel, ha mindegyiken más kombinációt adott meg.
+Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabszámot
+adja meg, akkor jelenjen meg mennyi esélye van nyerni.
 
 ## 11. Tesztterv: 
