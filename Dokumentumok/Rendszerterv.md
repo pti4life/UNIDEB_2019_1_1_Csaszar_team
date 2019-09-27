@@ -66,14 +66,23 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 
 ## 4. Követelmények: 
 * Funkcionális követelmények:
-	* A számításokban nem lehet hiba
-	* Minden input lekezelve, minden lehetséges beérkező adatra
-	* Minden lehetséges Exception lekezelve, nem fagyhat ki a program
+	* A számításokban nem lehet hiba, azaz helyes input értékek megadása
+  esetén helyes értéket ad a program.
+	* Minden input lekezelve, minden lehetséges beérkező adatra, azaz, amennyiben
+  a felhasználó nem megfelelő értéket ad meg hibaüzenet segítségével jelezzük,
+  hogy hibás valamelyik érték. Ezt követően újra lehet próbálkozni értékadással.
 * Nem funkcionális követelmények:
-	* A felhasználói felület könnyen kezelhető legyen
-	* Semmilyen felesleges adat nem kerül megjelenítésre
+	* A felhasználói felület könnyen kezelhető legyen az idősebb korosztály
+  számára is, valamint a számítógépek terén nem tapasztalt felhasználók
+  számára is. Ennek az elérésehez egyszerű, letisztult grefikus felhasználói
+  felületet kell terveznünk.
+	* Semmilyen felesleges adat nem kerül megjelenítésre, ezzel is elkerülve
+  a felhasználó esetleges összezavarását.
 * Jogi követelmények:
-	* A szerencsejátékokra szóló törvények figyelembe vétele
+	* Mivel nem valós pénzt használ a felhasználó, ezért a szoftver nem 
+  minősül szerencsejátéknak, így az arra vonatkozó szigorú törvényeknek
+  sem kell megfelelnie.
+  * A felhasználóról tárolt adatokat TILOS kiadni, valamint manipulálni!
 
 
 ## 5. Funkcionális terv:
@@ -104,29 +113,6 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 ## 9. Adatbázis terv: 
 
 ## 10. Implementációs terv: 
-* Menüpontok leírása:
-	* <b>új szelvény:</b>
-Kérje be a program, hogy: hány darab szelvényt venne a felhasználó, mennyi
-pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen megtalálható 
-még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a
-vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló
-összeg az új összeg legyen megjelenítve.
-	* <b>történet:</b>
-Táblázatban jelenjenek meg az addig lezajlott tranzakciók. A táblában a következő
-adatok szerepeljenek: a tranzakció dátuma, a szelvények száma, fizetett összeg,
-nyereség (ha veszített, az aktuális tranzakcióban vásárolt szelvényeken, akkor 
-a vesztett pénzösszeg jelenjen meg "-" jelzővel).
-* <b>statisztika:</b>
-A képernyőn meg kell hogy jelenjenek a következő adatok: összesen eddig
-megvásárolt szelvények száma, összesen eddig elköltött pénz, a nyertes szelvények
-száma, a vesztes szelvények száma, összes eddig nyereség, valamint az eddig veszteségek.
-Ezeket az adatokat valamilyen diagram segítségével ábrázolni is kell, amennyiben 
-belefér a határidőbe.
-* <b>mennyit kell vennem?:</b>
-Ez a fül tartalmazzon egy kalkulátort, ami kiszámolja hány darab szelvényt
-kell vennie a felhasználónak, hogy x% (felhasználó által adott érték) esélye
-legyen nyerni valamelyikkel, ha mindegyiken más kombinációt adott meg.
-Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabszámot
-adja meg, akkor jelenjen meg mennyi esélye van nyerni.
+
 
 ## 11. Tesztterv: 
