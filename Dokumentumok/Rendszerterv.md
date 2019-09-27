@@ -87,12 +87,28 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
 
 ## 5. Funkcionális terv:
 
-* <b>Képernyőtervek:</b> A felhasználó az ablak alján lévő mezőben adhatja meg a megtenni kívánt számokat és 
-    a mellette lévő gombbal véglegesítheti és új szelvény kérni. A szelvény eredményét a középen lévő dobozban láthatja, 
-    a nyert vagy vesztett pontok és eltalált számokkal egyetemben. A játékválasztó gomb segítségével 
-	a különböző lottó fajták közül választhat a felhasználó.
-	A jobb felül elhelyezkedő statisztika és történet gombokon átvált a felhasználó statisztikikáihoz, 
-	ahol az eddig megnyert és elvesztett pontokat, találatokat és oszlopdiagrammokat láthat.
+* <b>Képernyőtervek:</b>
+  <b>új szelvény:</b>
+  ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9perny%C5%91terv/%C3%9Aj%20szelv%C3%A9ny.png)
+  A képernyő bal felső sarkában két indormáció jelenik meg: a szelvények jelenlegi
+  ára és a felhasználó birtokában lévő kreditmennyiség. A felhasználó megadhatja
+  a vásárolni kívánt szelvény mennyiséget, a fizetendő összeg megjelenik melette.
+  A vásárlás gombra kattintva, a fizetendő összeg levonódik a kredit mennyiségből,
+  valamint a felhasználó ki kell töltse a vásárolt szelvényeket.
+  <b>történet:</b>
+  ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9perny%C5%91terv/Statisztika.png)
+  A képernyőn megjelenik egy táblanézet. A táblázatban a felhasználó számlatörténtete
+  jelenik meg, amit az adatbázisból kérün le.
+  <b>statisztika:</b>
+  ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9perny%C5%91terv/T%C3%B6rt%C3%A9net.png)
+  **SZERKESZTÉSRE VÁR**
+  <b>mennyit kell vennem?:</b>
+  ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9perny%C5%91terv/Mennyit%20kell%20vennem.png)
+  A felhasználó két kalkuláció közül tud választani:
+  - Meg tudja adni a vásárolt szelvények számát, ekkor megkapja mennyi esélye 
+  van a nyerésre (5 találatra, ha minden szelvényen más variációt adott meg). 
+  - Meg tudja adni mennyi esélyt szeretne elérni, ekkor megkapja hány szelvényt
+  kellene vásárolnia, hogy elérje az adott esélyt.
 
 ## 6. Fizikai környezet: 
    
@@ -119,25 +135,32 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
   ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/Lottery_User.svg)
 
   Oszlopok leírása:
-  <b>ID:</b> automatikusan generált <b>int</b> érték. Nem lehet NULL, ez a
-  Primary Key. Nem létezhet több egyforma.
-  <b>user_name:</b> a felhasználó által választott név, később szükséges
-  a bejelentkezéshez. <b>Varchar</b> érték, ami nem lehet NULL, valamint 
-  nem egyezhet más felhasználó nevével.
-  <b>pass:</b> a felhasználó által megadott jelszó Hash-elt értéke, ami 
-  <b>varchar</b>  típusként van eltárolva. Nem lehet NULL.
-  <b>bought_tickets:</b> a felhasználó által vásárolt szelvények száma. <b>Int</b>
-  típus, kezdőértéke 0.
-  <b>winner_tickets:</b> a felhasználó által vásárolt nyertes szelvények száma. 
-  <b>Int</b> típus, kezdőértéke 0. 
-  <b>credit:</b> a rendelkezésre álló kredit mennyiség. <b>Int</b> típus, 
-  kezdőértéke 1000. Az érték 24 óránként növekszik 300 kredittel.
-  <b>credit_used_up:</b> a felhasználó által elköltött kredit mennyiség. <b>Int</b> 
-  típus, kezdőértéke 0.
-  <b>credit_won:</b> kredit mennyiség, amit a felhasználó a nyertes szelvények 
-  segítségével nyert. <b>Int</b> típus, kezdőértéke 0.
-  <b>credit_lost:</b> kredit mennyiség, amit a felhasználó a vesztes szelvények 
-  vásárlási költsége miatt vesztett. <b>Int</b> típus, kezdőértéke 0.
+  <b>ID:</b> 
+  automatikusan generált <b>int</b> érték. Nem lehet NULL, ez a Primary 
+  Key. Nem létezhet több egyforma.
+  <b>user_name:</b> 
+  a felhasználó által választott név, később szükséges a bejelentkezéshez. 
+  <b>Varchar</b> érték, ami nem lehet NULL, valamint nem egyezhet más felhasználó 
+  nevével.
+  <b>pass:</b> 
+  a felhasználó által megadott jelszó Hash-elt értéke, ami <b>varchar</b>  típusként 
+  van eltárolva. Nem lehet NULL.
+  <b>bought_tickets:</b> 
+  a felhasználó által vásárolt szelvények száma. <b>Int</b> típus, kezdőértéke 0.
+  <b>winner_tickets:</b> 
+  a felhasználó által vásárolt nyertes szelvények száma. <b>Int</b> típus, 
+  kezdőértéke 0. 
+  <b>credit:</b> 
+  a rendelkezésre álló kredit mennyiség. <b>Int</b> típus, kezdőértéke 1000. 
+  Az érték 24 óránként növekszik 300 kredittel.
+  <b>credit_used_up:</b> 
+  a felhasználó által elköltött kredit mennyiség. <b>Int</b> típus, kezdőértéke 0.
+  <b>credit_won:</b> 
+  kredit mennyiség, amit a felhasználó a nyertes szelvények segítségével nyert. 
+  <b>Int</b> típus, kezdőértéke 0.
+  <b>credit_lost:</b> 
+  kredit mennyiség, amit a felhasználó a vesztes szelvények vásárlási költsége miatt 
+  vesztett. <b>Int</b> típus, kezdőértéke 0.
 
 
 ## 10. Implementációs terv: 
