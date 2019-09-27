@@ -12,11 +12,6 @@ public class Database {
 
     private static Database databaseInstance=null;
 
-    final String JDBC_DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
-    final String URL = "jdbc:derby:sampleDB;create=true";
-    final String USERNAME = "";
-    final String PASSWORD = "";
-
 
     Connection conn = null;
     Statement createStatement = null;
@@ -26,9 +21,11 @@ public class Database {
     private Database() {
 
         try {
-            conn = DriverManager.getConnection(URL);
-            System.out.println("A híd létrejött");
-        } catch (SQLException ex) {
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            conn = DriverManager.getConnection("jdbc:oracle:thin:@codd.inf.unideb.hu:1521:ora12c", "U_C4NVNX", "rolcsi89");
+            System.out.println("efut");
+        } catch (Exception ex) {
+            System.out.println("hiba a onnectionnál");
             System.out.println(ex);
         }
 
@@ -62,7 +59,7 @@ public class Database {
         }
     }
 
-    public Database getDatabaseInstance() {
+    public static Database getDatabaseInstance() {
         if (databaseInstance==null) {
             return new Database();
         } else {

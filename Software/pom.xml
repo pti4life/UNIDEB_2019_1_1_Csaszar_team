@@ -49,6 +49,13 @@
             <version>13-ea+9</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>19.3</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

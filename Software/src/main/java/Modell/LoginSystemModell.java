@@ -1,6 +1,13 @@
 package Modell;
 
+import javax.xml.crypto.Data;
+
 public class LoginSystemModell {
+
+    Database db = Database.getDatabaseInstance();
+    public LoginSystemModell() {
+
+    }
 
 
     public String login() {

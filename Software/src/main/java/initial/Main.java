@@ -10,11 +10,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("LotteryPanes.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("LoginSystemView.fxml"));
+
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 800, 400));
         primaryStage.setResizable(false);
         primaryStage.show();
+        System.out.println("show után gec");
     }
 
 
