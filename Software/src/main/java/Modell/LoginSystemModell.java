@@ -8,16 +8,13 @@ public class LoginSystemModell {
     Database db = Database.getDatabaseInstance();
 
     public String login(String username, String password) {
-        Boolean res=db.authUser(username);
+        String res=db.authUser(username);
         System.out.println(res);
-        if(res==null)  {
-            return "DB_PROBLEM";
-        } else if (res) {
+        if (res.equals("USER_EXISTS")) {
             String loginResult=db.login(username,password);
             return loginResult;
-        } else {
-            return "USER_DOESNT_EXISTS";
         }
+        return res;
 
     }
 
@@ -30,19 +27,17 @@ public class LoginSystemModell {
             return "PASSWORD_EQUAL_USERNAME";
         }
 
-        try {
-            if (db.authUser(username)) {
-                return "USERNAME_EXISTS";
-            }
+        String result=db.authUser(username);
 
-        } catch (NullPointerException ex) {
-            System.out.println(ex);
-            return "DB_PROBLEM";
+        if (result.equals("USER_EXISTS")) {
+            String result2=db.addUser(username,password);
+            return result;
+        } else  {
+            return result;
         }
 
-        String result=db.addUser(username,password);
 
-        return result;
+
 
     }
 

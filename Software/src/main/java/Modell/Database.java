@@ -70,23 +70,21 @@ public class Database {
         }
     }
 
-    public boolean authUser(String username) {
-        Boolean userExists=null;
+    public String authUser(String username) {
         String query="select * from users where username='"+username+"'";
         try {
 
             ResultSet rs = createStatement.executeQuery(query);
 
             if(rs.next()) {
-                userExists = true;
+                return "USER_EXISTS";
             } else {
-                userExists=false;
+                return "USER_DOESNT_EXISTS";
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            return "DB_PROBLEM";
         }
-
-        return userExists;
     }
 
     public String addUser(String username, String password) {
@@ -123,4 +121,6 @@ public class Database {
         }
 
     }
+
+
 }

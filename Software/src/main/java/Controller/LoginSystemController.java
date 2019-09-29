@@ -88,7 +88,7 @@ public class LoginSystemController implements Initializable {
             case "PASSWORD_EQUAL_USERNAME":
                 regAlertLabel.setText("A felhasználónév és a jelszó nem egyezhet meg");
                 break;
-            case "USERNAME_EXISTS":
+            case "USER_EXISTS":
                 regAlertLabel.setText("Ez a felhasználónév már létezik.");
                 break;
             case "DB_PROBLEM":
