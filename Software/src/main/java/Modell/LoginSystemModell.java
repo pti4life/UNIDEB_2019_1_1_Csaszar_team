@@ -1,14 +1,24 @@
 package Modell;
 
 import javax.xml.crypto.Data;
+import java.util.IllegalFormatCodePointException;
 
 public class LoginSystemModell {
 
     Database db = Database.getDatabaseInstance();
 
-    public String login() {
+    public String login(String username, String password) {
+        Boolean res=db.authUser(username);
 
-        return null;
+        if(res==null)  {
+            return "DB_PROBLEM";
+        } else if (res) {
+            String loginResult=db.login(username,password);
+            return loginResult;
+        } else {
+            return "USER_DOESNT_EXISTS";
+        }
+
     }
 
     public String signUp(String username, String password, String password2) {

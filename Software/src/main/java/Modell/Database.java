@@ -19,7 +19,6 @@ public class Database {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             conn = DriverManager.getConnection("jdbc:oracle:thin:@codd.inf.unideb.hu:1521:ora12c", "U_C4NVNX", "rolcsi89");
-            System.out.println("efut");
         } catch (Exception ex) {
             System.out.println("hiba a onnectionnál");
             System.out.println(ex);
@@ -107,25 +106,21 @@ public class Database {
     }
 
     public String login(String username,String password) {
-            boolean userExists=authUser(username);
             try {
 
-                if (userExists) {
-                    PreparedStatement stmt=conn.prepareStatement(
-                            "select *" +
-                                    "from users" +
-                                    "where username=? and password=?;");
-                    stmt.setString(1,username);
-                    stmt.setString(2,password);
-                    ResultSet rs=stmt.executeQuery();
-                    if(rs.next()) {
-                        return "SUCCES_LOGIN";
-                    } else {
-                        return "BAD_PASSWORD";
-                    }
+                PreparedStatement stmt=conn.prepareStatement(
+                        "select *" +
+                                "from users" +
+                                "where username=? and password=?;");
+                stmt.setString(1,username);
+                stmt.setString(2,password);
+                ResultSet rs=stmt.executeQuery();
+                if(rs.next()) {
+                    return "SUCCES_LOGIN";
                 } else {
-                    return "USERNAME_NOT_EXISTS";
+                    return "BAD_PASSWORD";
                 }
+
 
             } catch (Exception e) {
                 return "DB_PROBLEM";
