@@ -51,7 +51,7 @@ public class LoginSystemController implements Initializable {
     Label loginAlertLabel;
 
 
-
+    public static String username=null;
 
 
 
@@ -104,6 +104,7 @@ public class LoginSystemController implements Initializable {
 
             case "SUCCES_LOGIN":
                 //SCENE VÁLTÁS
+                username=loginUsername.getText();
                 loginAlertLabel.setText("Sikeres tököm.");
                 break;
             case "BAD_PASSWORD":
