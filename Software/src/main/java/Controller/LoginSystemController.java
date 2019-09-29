@@ -1,6 +1,7 @@
 package Controller;
 
 import Modell.LoginSystemModell;
+import initial.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -104,9 +105,8 @@ public class LoginSystemController implements Initializable {
         switch (result) {
 
             case "SUCCES_LOGIN":
-                //SCENE VÁLTÁS
                 username=loginUsername.getText();
-                loginAlertLabel.setText("Sikeres tököm.");
+                Main.setScene("LotteryPanes.fxml");
                 break;
             case "BAD_PASSWORD":
                 loginAlertLabel.setText("Rosszul írta be a jelszavát!");

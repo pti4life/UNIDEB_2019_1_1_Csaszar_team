@@ -2,6 +2,7 @@ package Controller;
 
 import Modell.Database;
 import Modell.LotteryModell;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
@@ -114,4 +115,6 @@ public class LotteryController implements Initializable {
         result.setText(LotteryModell.hmsibCalculate(hmsibInput.getText(), hmsibChoice.getSelectionModel().getSelectedItem()));
     }
 
+    public void logOut(ActionEvent actionEvent) {
+    }
 }
