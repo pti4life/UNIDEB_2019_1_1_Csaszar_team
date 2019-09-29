@@ -190,14 +190,16 @@ Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabsz�
 adja meg, akkor jelenjen meg mennyi esélye van nyerni.
 
 ## 11. Tesztterv: 
+
 * <b>Komponensteszt</b></br>
 A komponens és integrációs tesztet idő hiányában egy lépésben fedjük le. Itt a legfontosabbnak ítélt metódusok, osztályok és azok közös működését teszteljük.
-Ezeknek a célját és a teszt végeredményét pedig a következő táblázatban ábrázoljuk:
+Ezeknek a leírását és a teszt végeredményét pedig a következő táblázatban ábrázoljuk:
+
+
 
 |Metódus neve   |Metódus leírása   |Elvárt működés   |Teszt állapota   |
-|---|---|---|---|---|
-|  login |Bejelentkezési adatokat az adatbázisból lekéri és kiértékeli   |Minden eshetőségre van elágazás   |Nincs megkezdve   |
-|  signUp |   |   |   |
+|---------------|------------------|-----------------|-----------------|
+|  login |Bejelentkezési adatokat az adatbázisból lekéri és kiértékeli |Minden eshetőségre van elágazás |Nincs megkezdve   |
 
 
 * <b>Rendszerteszt</b></br>
