@@ -190,3 +190,17 @@ Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabsz�
 adja meg, akkor jelenjen meg mennyi esélye van nyerni.
 
 ## 11. Tesztterv: 
+* <b>Komponensteszt</b></br>
+A komponens és integrációs tesztet idő hiányában egy lépésben fedjük le. Itt a legfontosabbnak ítélt metódusok, osztályok és azok közös működését teszteljük.
+Ezeknek a célját és a teszt végeredményét pedig a következő táblázatban ábrázoljuk:
+
+|Metódus neve   |Metódus leírása   |Elvárt működés   |Teszt állapota   |
+|---|---|---|---|---|
+|  login |Bejelentkezési adatokat az adatbázisból lekéri és kiértékeli   |Minden eshetőségre van elágazás   |Nincs megkezdve   |
+|  signUp |   |   |   |
+
+
+* <b>Rendszerteszt</b></br>
+A közeli határidő miatt a rendszertesztet nincs lehetőség külön céghez kiszervezni. Ez házon belül lesz megoldva, ahol a csapat minden tagja külön átfutja a rendszertervet és az ott specifikált funkciókat teszteli és dokumentálja a problémákat.
+* <b>Átvételi teszt</b></br>
+A program átvételi tesztjét egy limitált létszámú bétateszt keretein belül valósítjuk meg. Ezen közeli ismerősöknek és egyetemi társaknak küldünk ki egy próbaverziót. A teszt fő célja a bejelentkezési felület megfelelő működésének és az adatbázis teherbírásának felmérése.
