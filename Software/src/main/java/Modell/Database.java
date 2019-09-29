@@ -71,7 +71,7 @@ public class Database {
         }
     }
 
-    private boolean authUser(String username) {
+    public boolean authUser(String username) {
         Boolean userExists=null;
         try {
             PreparedStatement stmt=conn.prepareStatement(
@@ -94,21 +94,7 @@ public class Database {
     }
 
     public String signUp(String username, String password, String password2) {
-        if (!password.equals(password2)) {
-            return "TWO_PASSWORD_NOT_EQUAL";
-        }
 
-        if (password.equals(username)) {
-            return "PASSWORD_EQUAL_USERNAME";
-        }
-        try {
-            if (authUser(username)) {
-                return "USERNAME_EXISTS";
-            }
-        } catch (NullPointerException ex) {
-            System.out.println(ex);
-            return "DB_PROBLEM";
-        }
 
 
         try {

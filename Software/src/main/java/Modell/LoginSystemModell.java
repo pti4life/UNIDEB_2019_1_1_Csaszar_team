@@ -11,14 +11,28 @@ public class LoginSystemModell {
         return null;
     }
 
-    public String signUp() {
+    public String signUp(String username, String password, String password2) {
+        if (!password.equals(password2)) {
+            return "TWO_PASSWORD_NOT_EQUAL";
+        }
 
-        return null;
+        if (password.equals(username)) {
+            return "PASSWORD_EQUAL_USERNAME";
+        }
+
+        try {
+            if (db.authUser(username)) {
+                return "USERNAME_EXISTS";
+            }
+
+        } catch (NullPointerException ex) {
+            System.out.println(ex);
+            return "DB_PROBLEM";
+        }
+
+        return "SUCCESFULLY_SIGNUP";
+
     }
 
-    private boolean authUser() {
-
-        return true;
-    }
 
 }
