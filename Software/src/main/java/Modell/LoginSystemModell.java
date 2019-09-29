@@ -1,27 +1,25 @@
 package Modell;
 
-import javax.xml.crypto.Data;
-import java.util.IllegalFormatCodePointException;
+import org.apache.commons.codec.digest.DigestUtils;
 
 public class LoginSystemModell {
 
     Database db = Database.getDatabaseInstance();
 
     public String login(String username, String password) {
-        Boolean res=db.authUser(username);
+        String res=db.authUser(username);
         System.out.println(res);
-        if(res==null)  {
-            return "DB_PROBLEM";
-        } else if (res) {
+        if (res.equals("USER_EXISTS")) {
+            password=DigestUtils.sha256Hex(password);
             String loginResult=db.login(username,password);
             return loginResult;
-        } else {
-            return "USER_DOESNT_EXISTS";
         }
+        return res;
 
     }
 
     public String signUp(String username, String password, String password2) {
+
         if (!password.equals(password2)) {
             return "TWO_PASSWORD_NOT_EQUAL";
         }
@@ -29,20 +27,19 @@ public class LoginSystemModell {
         if (password.equals(username)) {
             return "PASSWORD_EQUAL_USERNAME";
         }
-
-        try {
-            if (db.authUser(username)) {
-                return "USERNAME_EXISTS";
-            }
-
-        } catch (NullPointerException ex) {
-            System.out.println(ex);
-            return "DB_PROBLEM";
+;
+        String result=db.authUser(username);
+        if (result.equals("USER_DOESNT_EXISTS")) {
+            password= DigestUtils.sha256Hex(password);
+            System.out.println("LEFUT");
+            String result2=db.addUser(username,password);
+            return result2;
+        } else  {
+            return result;
         }
 
-        String result=db.addUser(username,password);
 
-        return result;
+
 
     }
 
