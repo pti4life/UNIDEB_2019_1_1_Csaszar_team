@@ -45,7 +45,7 @@
                         </font>
                     </Button>
                     <Button id="backToLoginButton" fx:id="backToLoginButton" layoutX="43.0" layoutY="311.0" mnemonicParsing="false" onAction="#backToLoginScreen" prefHeight="31.0" prefWidth="160.0" text="Vissza a bejelentkezéshez" />
-               <Label id="alertLabel" fx:id="alertLabel" layoutX="178.0" layoutY="105.0" prefHeight="17.0" prefWidth="402.0" textAlignment="CENTER" textFill="RED">
+               <Label id="regAlertLabel" fx:id="regAlertLabel" layoutX="178.0" layoutY="105.0" prefHeight="17.0" prefWidth="402.0" textAlignment="CENTER" textFill="RED">
                   <font>
                      <Font size="19.0" />
                   </font>
@@ -59,38 +59,43 @@
                             <Font size="42.0" />
                         </font>
                     </Text>
-                    <TextField id="loginUsername" fx:id="loginUsername" layoutX="321.0" layoutY="115.0" prefHeight="25.0" prefWidth="204.0" />
-                    <Text layoutX="203.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév:" textAlignment="RIGHT" wrappingWidth="110.24951171875">
+                    <TextField id="loginUsername" fx:id="loginUsername" layoutX="318.0" layoutY="143.0" prefHeight="25.0" prefWidth="204.0" />
+                    <Text layoutX="200.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév:" textAlignment="RIGHT" wrappingWidth="110.24951171875">
                         <font>
                             <Font size="15.0" />
                         </font>
                     </Text>
-                    <Text layoutX="203.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:" textAlignment="RIGHT" wrappingWidth="110.24951171875">
+                    <Text layoutX="200.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:" textAlignment="RIGHT" wrappingWidth="110.24951171875">
                         <font>
                             <Font size="15.0" />
                         </font>
                     </Text>
-                    <Button id="loginButton" fx:id="loginButton" layoutX="368.0" layoutY="201.0" mnemonicParsing="false" onAction="#Login" text="Bejelentkezés">
+                    <Button id="loginButton" fx:id="loginButton" layoutX="365.0" layoutY="229.0" mnemonicParsing="false" onAction="#Login" text="Bejelentkezés">
                         <font>
                             <Font size="15.0" />
                         </font>
                     </Button>
-                    <Text layoutX="146.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ha nincs még felhasználója akkor">
+                    <Text layoutX="143.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ha nincs még felhasználója akkor">
                         <font>
                             <Font size="16.0" />
                         </font>
                     </Text>
-                    <Text layoutX="503.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" regisztrálhat.">
+                    <Text layoutX="500.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" regisztrálhat.">
                         <font>
                             <Font size="16.0" />
                         </font>
                     </Text>
-                    <PasswordField id="loginPassword" fx:id="loginPassword" layoutX="321.0" layoutY="159.0" prefHeight="25.0" prefWidth="204.0" />
-                    <Hyperlink id="loginTextLinkToReg" fx:id="loginTextLinkToReg" layoutX="384.0" layoutY="253.0" onAction="#GoToRegScreen" prefHeight="33.0" prefWidth="124.0" text="IDE KATTINTVA">
+                    <PasswordField id="loginPassword" fx:id="loginPassword" layoutX="318.0" layoutY="187.0" prefHeight="25.0" prefWidth="204.0" />
+                    <Hyperlink id="loginTextLinkToReg" fx:id="loginTextLinkToReg" layoutX="381.0" layoutY="281.0" onAction="#GoToRegScreen" prefHeight="33.0" prefWidth="124.0" text="IDE KATTINTVA">
                         <font>
                             <Font size="16.0" />
                         </font>
                     </Hyperlink>
+               <Label id="loginAlertLabel" fx:id="loginAlertLabel" layoutX="157.0" layoutY="102.0" prefHeight="17.0" prefWidth="462.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
                 </children>
             </Pane>
         </children>
