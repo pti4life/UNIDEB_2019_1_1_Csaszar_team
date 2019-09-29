@@ -136,11 +136,94 @@ public class Database {
         return result;
     }
 
+    public void setBoughtTickets(String userName, int amount) {
+        String query = "update users SET bought_tickets = " + amount + "where username = '" + userName + "'";
+
+        try {
+            createStatement.executeQuery(query);
+        } catch (Exception ignored) {}
+    }
+
+    public int getBoughtTickets(String userName) {
+        String query = "select bought_tickets from users where username = '" + userName + "'";
+        ResultSet usedUpCr = null;
+        int result = 0;
+
+        try {
+            usedUpCr = createStatement.executeQuery(query);
+            result = usedUpCr.getInt(0);
+        } catch (Exception ignored) {}
+
+        return result;
+    }
+
+    public void setWinnerTickets(String userName, int amount) {
+        String query = "update users SET winner_tickets = " + amount + "where username = '" + userName + "'";
+
+        try {
+            createStatement.executeQuery(query);
+        } catch (Exception ignored) {}
+    }
+
+    public int getWinnerTickets(String userName) {
+        String query = "select winner_tickets from users where username = '" + userName + "'";
+        ResultSet usedUpCr = null;
+        int result = 0;
+
+        try {
+            usedUpCr = createStatement.executeQuery(query);
+            result = usedUpCr.getInt(0);
+        } catch (Exception ignored) {}
+
+        return result;
+    }
+
+    public void setUsedUpCredit(String userName, int amount) {
+        String query = "update users SET credit_used_up = " + amount + "where username = '" + userName + "'";
+
+        try {
+            createStatement.executeQuery(query);
+        } catch (Exception ignored) {}
+    }
+
+    public int getUsedUpCredit(String userName) {
+        String query = "select credit_used_up from users where username = '" + userName + "'";
+        ResultSet usedUpCr = null;
+        int result = 0;
+
+        try {
+            usedUpCr = createStatement.executeQuery(query);
+            result = usedUpCr.getInt(0);
+        } catch (Exception ignored) {}
+
+        return result;
+    }
+
+    public void setCreditWon(String userName, int amount) {
+        String query = "update users SET credit_won = " + amount + "where username = '" + userName + "'";
+
+        try {
+            createStatement.executeQuery(query);
+        } catch (Exception ignored) {}
+    }
+
+    public int getCreditWon(String userName) {
+        String query = "select credit_won from users where username = '" + userName + "'";
+        ResultSet usedUpCr = null;
+        int result = 0;
+
+        try {
+            usedUpCr = createStatement.executeQuery(query);
+            result = usedUpCr.getInt(0);
+        } catch (Exception ignored) {}
+
+        return result;
+    }
+
     public void setCredit(String userName, int credit) {
         String query = "update users SET credit = " + credit + " where username='" + userName + "'";
         try {
             createStatement.executeQuery(query);
         } catch (Exception ignored) {}
     }
-
 }

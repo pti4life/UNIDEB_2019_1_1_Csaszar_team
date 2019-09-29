@@ -52,6 +52,27 @@
                   <Label id="ticketPrice" fx:id="ticketPrice" alignment="CENTER_RIGHT" layoutX="682.0" layoutY="14.0" prefHeight="15.0" prefWidth="102.0" textAlignment="RIGHT" />
                   <Label id="credit" fx:id="credit" alignment="CENTER_RIGHT" layoutX="682.0" layoutY="31.0" prefHeight="15.0" prefWidth="102.0" textAlignment="RIGHT" />
                   <Label id="newTicketError" fx:id="newTicketError" alignment="CENTER" layoutX="251.0" layoutY="273.0" prefHeight="15.0" prefWidth="298.0" textAlignment="CENTER" textFill="RED" />
+                  <Pane id="drawPane" fx:id="drawPane" layoutX="1.0" layoutY="56.0" prefHeight="344.0" prefWidth="800.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <TextField id="num1In" fx:id="num1In" layoutX="60.0" layoutY="160.0" prefWidth="35.0" />
+                        <TextField id="num2In" fx:id="num2In" layoutX="120.0" layoutY="160.0" prefWidth="35.0" />
+                        <TextField id="num3In" fx:id="num3In" layoutX="180.0" layoutY="160.0" prefWidth="35.0" />
+                        <TextField id="num4In" fx:id="num4In" layoutX="240.0" layoutY="160.0" prefWidth="35.0" />
+                        <TextField id="num5In" fx:id="num5In" layoutX="300.0" layoutY="160.0" prefWidth="35.0" />
+                        <Label layoutX="115.0" layoutY="113.0" text="Kérlek írd be a számokat." />
+                        <Button layoutX="179.0" layoutY="235.0" mnemonicParsing="false" onAction="#fillTicket" text="OK" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Szelvények száma:" />
+                        <Label id="ticketsLeft" fx:id="ticketsLeft" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="706.0" layoutY="14.0" prefHeight="15.0" prefWidth="80.0" textAlignment="RIGHT" />
+                        <Label id="num1Out" fx:id="num1Out" layoutX="730.0" layoutY="165.0" />
+                        <Label id="num2Out" fx:id="num2Out" layoutX="670.0" layoutY="165.0" />
+                        <Label id="num3Out" fx:id="num3Out" layoutX="490.0" layoutY="165.0" />
+                        <Label id="num4Out" fx:id="num4Out" layoutX="550.0" layoutY="165.0" />
+                        <Label id="num5Out" fx:id="num5Out" layoutX="610.0" layoutY="165.0" />
+                        <Button id="drawButton" fx:id="drawButton" layoutX="579.0" layoutY="235.0" mnemonicParsing="false" onAction="#doDraw" text="Sorsolás" visible="false" />
+                        <Button id="backButton" fx:id="backButton" layoutX="724.0" layoutY="305.0" mnemonicParsing="false" onAction="#showNewTicketPane" text="Vissza" visible="false" />
+                        <Label id="losingMessage" fx:id="losingMessage" layoutX="331.0" layoutY="73.0" text="Sajnos nem nyertél..." visible="false" />
+                     </children>
+                  </Pane>
                </children>
             </Pane>
             <Pane id="hmsibPane" fx:id="hmsibPane" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: WHITE;" visible="false">
@@ -66,15 +87,7 @@
             </Pane>
             <Pane id="statisticsPane" fx:id="statisticsPane" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: WHITE;" visible="false">
                <children>
-                  <Button layoutX="737.0" layoutY="361.0" mnemonicParsing="false" onAction="#showWelcomePane" text="Vissza" />
-                  <BubbleChart layoutX="14.0">
-                     <xAxis>
-                        <NumberAxis side="BOTTOM" />
-                     </xAxis>
-                     <yAxis>
-                        <NumberAxis side="LEFT" />
-                     </yAxis>
-                  </BubbleChart>
+                  <fx:include source="Statistics.fxml" />
                </children>
             </Pane>
          </children>

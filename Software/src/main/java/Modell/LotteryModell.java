@@ -2,6 +2,9 @@ package Modell;
 
 import modell.Ticket;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class LotteryModell {
 
     public static String getPriceOf(String ticket) {
@@ -24,6 +27,35 @@ public class LotteryModell {
             return calculateTicketAmount(amount);
         else
             return calculateChance(amount);
+    }
+
+    public static boolean numbersCorrect(int[] nums) {
+        for(int i : nums)
+            if(i > 90 || i < 1)
+                return false;
+
+        long dist = Arrays.stream(nums).distinct().count();
+
+        return dist == nums.length;
+    }
+
+    public static int[] generateNumbers() {
+        int[] nums = new int[] {0, 0, 0, 0, 0};
+
+        while(!numbersCorrect(nums)) {
+            for(int i = 0; i < 5; i++)
+                nums[i] = new Random().nextInt(90)+1;
+        }
+
+        return nums;
+    }
+
+    public static boolean isWin(int[] nums, Ticket[] tickets) {
+        for(Ticket tmp : tickets)
+            if(tmp.isWinner(nums))
+                return true;
+
+        return false;
     }
 
     private static String calculateTicketAmount(String amount) {

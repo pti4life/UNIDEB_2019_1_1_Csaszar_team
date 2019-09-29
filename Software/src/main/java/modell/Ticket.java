@@ -4,6 +4,11 @@ public class Ticket {
 
     public static final int PRICE = 3;
     public static final int COMBINATIONS = 43949268;
+    public static final int MATCH1 = 0;
+    public static final int MATCH2 = 1500;
+    public static final int MATCH3 = 20000;
+    public static final int MATCH4 = 100000;
+    public static final int MATCH5 = 500000;
 
     private int[] numbers = new int[5];
 
