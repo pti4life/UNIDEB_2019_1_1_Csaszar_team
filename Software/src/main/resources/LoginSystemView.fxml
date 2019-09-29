@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,30 +21,35 @@
                             <Font size="42.0" />
                         </font>
                     </Text>
-                    <TextField id="regUserame" fx:id="regUserame" layoutX="295.0" layoutY="102.0" prefHeight="25.0" prefWidth="216.0" />
-                    <PasswordField id="regPassword2" fx:id="regPassword2" layoutX="298.0" layoutY="192.0" prefHeight="25.0" prefWidth="210.0" />
-                    <PasswordField id="regPassword1" fx:id="regPassword1" layoutX="298.0" layoutY="150.0" prefHeight="25.0" prefWidth="210.0" />
-                    <Text layoutX="177.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználói név:" textAlignment="RIGHT" wrappingWidth="114.0">
+                    <TextField id="regUserame" fx:id="regUserame" layoutX="295.0" layoutY="150.0" prefHeight="25.0" prefWidth="216.0" />
+                    <PasswordField id="regPassword2" fx:id="regPassword2" layoutX="298.0" layoutY="240.0" prefHeight="25.0" prefWidth="210.0" />
+                    <PasswordField id="regPassword1" fx:id="regPassword1" layoutX="298.0" layoutY="198.0" prefHeight="25.0" prefWidth="210.0" />
+                    <Text layoutX="177.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználói név:" textAlignment="RIGHT" wrappingWidth="114.0">
                         <font>
                             <Font size="15.0" />
                         </font>
                     </Text>
-                    <Text layoutX="177.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:" textAlignment="RIGHT" wrappingWidth="114.0">
+                    <Text layoutX="177.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:" textAlignment="RIGHT" wrappingWidth="114.0">
                         <font>
                             <Font size="15.0" />
                         </font>
                     </Text>
-                    <Text layoutX="153.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó mégegyszer:" textAlignment="RIGHT" wrappingWidth="137.8359375">
+                    <Text layoutX="153.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó mégegyszer:" textAlignment="RIGHT" wrappingWidth="137.8359375">
                         <font>
                             <Font size="15.0" />
                         </font>
                     </Text>
-                    <Button id="regButton" fx:id="regButton" layoutX="313.0" layoutY="235.0" mnemonicParsing="false" onAction="#SignUp" text="Regisztráció">
+                    <Button id="regButton" fx:id="regButton" layoutX="313.0" layoutY="283.0" mnemonicParsing="false" onAction="#SignUp" text="Regisztráció">
                         <font>
                             <Font size="20.0" />
                         </font>
                     </Button>
                     <Button id="backToLoginButton" fx:id="backToLoginButton" layoutX="43.0" layoutY="311.0" mnemonicParsing="false" onAction="#backToLoginScreen" prefHeight="31.0" prefWidth="160.0" text="Vissza a bejelentkezéshez" />
+               <Label id="alertLabel" fx:id="alertLabel" layoutX="178.0" layoutY="105.0" prefHeight="17.0" prefWidth="402.0" textAlignment="CENTER" textFill="RED">
+                  <font>
+                     <Font size="19.0" />
+                  </font>
+               </Label>
                 </children>
             </Pane>
             <Pane id="loginPanes" fx:id="loginPanes" layoutX="-4.0" prefHeight="390.0" prefWidth="806.0">
