@@ -16,6 +16,7 @@ import java.util.ResourceBundle;
 public class LoginSystemController implements Initializable {
 
     LoginSystemModell modell=new LoginSystemModell();
+    public static String userName = "";
 
     //SignUp
     @FXML
@@ -117,7 +118,7 @@ public class LoginSystemController implements Initializable {
                 break;
         }
 
-
+        userName = loginUsername.getText();
     }
 
     public void GoToRegScreen(ActionEvent actionEvent) {

@@ -122,5 +122,25 @@ public class Database {
 
     }
 
+    public int getCredit(String userName) {
+        String query = "select credit from users where username='" + userName + "'";
+        ResultSet credit = null;
+        int result = 0;
+
+        try {
+            credit = createStatement.executeQuery(query);
+            result = credit.getInt(0);
+        }
+        catch (Exception ignored) {}
+
+        return result;
+    }
+
+    public void setCredit(String userName, int credit) {
+        String query = "update users SET credit = " + credit + " where username='" + userName + "'";
+        try {
+            createStatement.executeQuery(query);
+        } catch (Exception ignored) {}
+    }
 
 }

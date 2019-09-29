@@ -2,6 +2,8 @@ package modell;
 
 public class Ticket {
 
+    public static final int PRICE = 3;
+    public static final int COMBINATIONS = 43949268;
 
     private int[] numbers = new int[5];
 
