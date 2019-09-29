@@ -33,6 +33,9 @@ public class LoginSystemController implements Initializable {
     @FXML
     Pane regPanes;
 
+    @FXML
+    Label regAlertLabel;
+
 
     //Login
     @FXML
@@ -44,9 +47,13 @@ public class LoginSystemController implements Initializable {
     @FXML
     Pane loginPanes;
 
-    //alert
     @FXML
-    Label alertLabel;
+    Label loginAlertLabel;
+
+
+
+
+
 
 
 
@@ -65,33 +72,50 @@ public class LoginSystemController implements Initializable {
 
     public void SignUp(ActionEvent actionEvent) {
         String res=modell.signUp(regUserame.getText(),regPassword1.getText(),regPassword2.getText());
-        alertLabel.setTextFill(Color.web("RED", 0.8));
+        regAlertLabel.setTextFill(Color.web("RED", 0.8));
 
         switch (res) {
             case "SUCCESSFULLY_SIGNUP":
-                alertLabel.setTextFill(Color.web("#15ff25", 0.8));
-                alertLabel.setText("Sikeres regisztráció, most már bejelentkezhet!");
+                regAlertLabel.setTextFill(Color.web("#15ff25", 0.8));
+                regAlertLabel.setText("Sikeres regisztráció, most már bejelentkezhet!");
                 break;
             case "FAILED_SIGNUP":
-                alertLabel.setText("Sikertelen regisztráció, forduljon a rendszergazdához!");
+                regAlertLabel.setText("Sikertelen regisztráció, forduljon a rendszergazdához!");
                 break;
             case "TWO_PASSWORD_NOT_EQUAL":
-                alertLabel.setText("A két jelszó nem egyforma!");
+                regAlertLabel.setText("A két jelszó nem egyforma!");
                 break;
             case "PASSWORD_EQUAL_USERNAME":
-                alertLabel.setText("A felhasználónév és a jelszó nem egyezhet meg");
+                regAlertLabel.setText("A felhasználónév és a jelszó nem egyezhet meg");
                 break;
             case "USERNAME_EXISTS":
-                alertLabel.setText("Ez a felhasználónév már létezik.");
+                regAlertLabel.setText("Ez a felhasználónév már létezik.");
                 break;
             case "DB_PROBLEM":
-                alertLabel.setText("Az adatbázissal probléma van, próbálja újra később!");
+                regAlertLabel.setText("Az adatbázissal probléma van, próbálja újra később!");
                 break;
         }
     }
 
     public void Login(ActionEvent actionEvent) {
 
+        String result=modell.login(loginUsername.getText(),loginPassword.getText());
+        switch (result) {
+
+            case "SUCCES_LOGIN":
+                //SCENE VÁLTÁS
+                loginAlertLabel.setText("Sikeres tököm.");
+                break;
+            case "BAD_PASSWORD":
+                loginAlertLabel.setText("Rosszul írta be a jelszavát!");
+                break;
+            case "DB_PROBLEM":
+                loginAlertLabel.setText("Adatbázis probléma forduljon a rendszergazdához!");
+                break;
+            case "USER_DOESNT_EXISTS":
+                loginAlertLabel.setText("Ez a felhasználónév nem létezik!");
+                break;
+        }
 
 
     }

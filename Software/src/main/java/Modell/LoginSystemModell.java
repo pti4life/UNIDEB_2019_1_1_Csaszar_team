@@ -9,7 +9,7 @@ public class LoginSystemModell {
 
     public String login(String username, String password) {
         Boolean res=db.authUser(username);
-
+        System.out.println(res);
         if(res==null)  {
             return "DB_PROBLEM";
         } else if (res) {

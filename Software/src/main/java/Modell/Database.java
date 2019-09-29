@@ -96,7 +96,6 @@ public class Database {
             stmt.setString(1,username);
             stmt.setString(2,password);
             stmt.execute();
-
         } catch (SQLException e) {
             e.printStackTrace();
             return "FAILED_SIGNUP";
@@ -106,25 +105,22 @@ public class Database {
     }
 
     public String login(String username,String password) {
-            try {
 
-                PreparedStatement stmt=conn.prepareStatement(
-                        "select *" +
-                                "from users" +
-                                "where username=? and password=?;");
-                stmt.setString(1,username);
-                stmt.setString(2,password);
-                ResultSet rs=stmt.executeQuery();
-                if(rs.next()) {
-                    return "SUCCES_LOGIN";
-                } else {
-                    return "BAD_PASSWORD";
-                }
+        String query="select * from users where username='"+username+"' and password='"+password+"'";
+        try {
+            ResultSet rs = createStatement.executeQuery(query);
 
-
-            } catch (Exception e) {
-                return "DB_PROBLEM";
+            if(rs.next()) {
+                return "SUCCES_LOGIN";
+            } else {
+                return "BAD_PASSWORD";
             }
+
+
+        } catch (Exception e) {
+            System.out.println("DB PROBLEM?"+e);
+            return "DB_PROBLEM";
+        }
 
     }
 }
