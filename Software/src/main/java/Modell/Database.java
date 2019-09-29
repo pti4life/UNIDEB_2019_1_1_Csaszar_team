@@ -73,13 +73,10 @@ public class Database {
 
     public boolean authUser(String username) {
         Boolean userExists=null;
+        String query="select * from users where username='"+username+"'";
         try {
-            PreparedStatement stmt=conn.prepareStatement(
-                    "select *" +
-                    "from users" +
-                    "where username=?;");
-            stmt.setString(1,username);
-            ResultSet rs=stmt.executeQuery();
+
+            ResultSet rs = createStatement.executeQuery(query);
 
             if(rs.next()) {
                 userExists = true;
@@ -93,25 +90,20 @@ public class Database {
         return userExists;
     }
 
-    public String signUp(String username, String password) {
+    public String addUser(String username, String password) {
         try {
             PreparedStatement stmt=conn.prepareStatement("" +
                     "INSERT INTO USERS (username, password) VALUES (?,?)");
-            stmt.setString(0,username);
-            stmt.setString(1,password);
-            boolean succ=stmt.execute();
-            if (succ) {
-                return "SUCCESSFULLY_SIGNUP";
-            } else {
-                return "FAILED_SIGNUP";
-            }
+            stmt.setString(1,username);
+            stmt.setString(2,password);
+            stmt.execute();
 
         } catch (SQLException e) {
             e.printStackTrace();
             return "FAILED_SIGNUP";
         }
 
-
+        return "SUCCESSFULLY_SIGNUP";
     }
 
     public String login(String username,String password) {
@@ -123,8 +115,8 @@ public class Database {
                             "select *" +
                                     "from users" +
                                     "where username=? and password=?;");
-                    stmt.setString(0,username);
-                    stmt.setString(1,password);
+                    stmt.setString(1,username);
+                    stmt.setString(2,password);
                     ResultSet rs=stmt.executeQuery();
                     if(rs.next()) {
                         return "SUCCES_LOGIN";

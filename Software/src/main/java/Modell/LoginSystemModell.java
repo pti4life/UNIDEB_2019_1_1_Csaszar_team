@@ -30,7 +30,7 @@ public class LoginSystemModell {
             return "DB_PROBLEM";
         }
 
-        String result=db.signUp(username,password);
+        String result=db.addUser(username,password);
 
         return result;
 
