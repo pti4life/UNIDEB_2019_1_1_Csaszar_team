@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<AnchorPane id="statPane" fx:id="statPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StatisticsController">
+   <children>
+      <BarChart fx:id="bc1" layoutY="37.0" prefHeight="350.0" prefWidth="395.0">
+        <xAxis>
+          <CategoryAxis id="xAxis1" side="BOTTOM" fx:id="xAxis1" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis id="yAxis1" fx:id="yAxis1" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="bc2" layoutX="400.0" layoutY="37.0" prefHeight="350.0" prefWidth="395.0">
+         <xAxis>
+            <CategoryAxis id="xAxis2" side="BOTTOM" fx:id="xAxis2" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis id="yAxis2" fx:id="yAxis2" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
