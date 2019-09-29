@@ -93,10 +93,7 @@ public class Database {
         return userExists;
     }
 
-    public String signUp(String username, String password, String password2) {
-
-
-
+    public String signUp(String username, String password) {
         try {
             PreparedStatement stmt=conn.prepareStatement("" +
                     "INSERT INTO USERS (username, password) VALUES (?,?)");
@@ -111,7 +108,7 @@ public class Database {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            return "FAILED_REG";
+            return "FAILED_SIGNUP";
         }
 
 
