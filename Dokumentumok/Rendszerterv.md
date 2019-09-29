@@ -188,6 +188,9 @@ kell vennie a felhasználónak, hogy x% (felhasználó által adott érték) es�
 legyen nyerni valamelyikkel, ha mindegyiken más kombinációt adott meg.
 Ez a folyamat működjön két irányban, azaz, ha a felhasználó az a darabszámot
 adja meg, akkor jelenjen meg mennyi esélye van nyerni.
+<br><br>
+A Regisztráció és a bejelentkezésért felelős osztály Modell és Controller osztályai UML Diagramban:
+![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/UML_REG_LOGIN.jpg?raw=true)
 
 ## 11. Tesztterv: 
 
