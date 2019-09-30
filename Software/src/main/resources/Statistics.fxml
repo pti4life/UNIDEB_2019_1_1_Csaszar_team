@@ -8,6 +8,7 @@
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
 
+<?import javafx.scene.control.Button?>
 <AnchorPane id="statPane" fx:id="statPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StatisticsController">
    <children>
       <BarChart fx:id="bc1" layoutY="37.0" prefHeight="350.0" prefWidth="395.0">
@@ -26,5 +27,6 @@
             <NumberAxis id="yAxis2" fx:id="yAxis2" side="LEFT" />
          </yAxis>
       </BarChart>
+       <Button fx:id="button" layoutX="727.0" layoutY="368.0" mnemonicParsing="false" onAction="#switchScene" text="Vissza" />
    </children>
 </AnchorPane>

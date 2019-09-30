@@ -2,6 +2,7 @@ package Controller;
 
 
 import Modell.Database;
+import initial.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
@@ -9,6 +10,7 @@ import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,10 +18,13 @@ import java.util.ResourceBundle;
 public class StatisticsController implements Initializable {
 
     Database db = Database.getDatabaseInstance();
-    public int bought_tickets=20, winner_tickets=3;
+
+    public static String userName = "";
+
+    public int bought_tickets=db.getBoughtTickets(userName), winner_tickets=db.getWinnerTickets(userName);
     public  int loser_tickets=bought_tickets-winner_tickets;
 
-    public int credit=1000,credit_used_up=500,credit_won=600,credit_lost=298;
+    public int credit=db.getCredit(userName),credit_used_up=db.getUsedUpCredit(userName),credit_won=db.getCreditWon(userName),credit_lost=0;
 
     @FXML
     public NumberAxis yAxis1;
@@ -34,6 +39,14 @@ public class StatisticsController implements Initializable {
     public BarChart bc1;
     @FXML
     public BarChart bc2;
+
+    @FXML
+    public Button button;
+
+    public void switchScene()
+    {
+        Main.setScene("LotteryPanes.fxml");
+    }
 
     @FXML
     public void initialize(URL url, ResourceBundle resourceBundle) {
