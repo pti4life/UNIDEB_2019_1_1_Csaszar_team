@@ -31,7 +31,6 @@ public class Main extends Application {
         try {
             root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource(scene)));
         } catch (IOException e){
-            System.out.println("geci");
             System.out.println(e);
         }
         stage.setTitle("Lotterysimulator");

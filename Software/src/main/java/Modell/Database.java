@@ -64,7 +64,8 @@ public class Database {
 
     public static Database getDatabaseInstance() {
         if (databaseInstance==null) {
-            return new Database();
+            databaseInstance=new Database();
+            return databaseInstance;
         } else {
             return databaseInstance;
         }

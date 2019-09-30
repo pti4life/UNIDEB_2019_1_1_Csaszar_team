@@ -8,7 +8,6 @@ public class LoginSystemModell {
 
     public String login(String username, String password) {
         String res=db.authUser(username);
-        System.out.println(res);
         if (res.equals("USER_EXISTS")) {
             password=DigestUtils.sha256Hex(password);
             String loginResult=db.login(username,password);
@@ -31,7 +30,6 @@ public class LoginSystemModell {
         String result=db.authUser(username);
         if (result.equals("USER_DOESNT_EXISTS")) {
             password= DigestUtils.sha256Hex(password);
-            System.out.println("LEFUT");
             String result2=db.addUser(username,password);
             return result2;
         } else  {
