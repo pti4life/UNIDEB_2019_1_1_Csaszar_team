@@ -95,10 +95,6 @@ A <b>tesztelést</b> tekintettel a kis projektre nem nevezünk ki külön embert
   a vásárolni kívánt szelvény mennyiséget, a fizetendő összeg megjelenik melette.
   A vásárlás gombra kattintva, a fizetendő összeg levonódik a kredit mennyiségből,
   valamint a felhasználó ki kell töltse a vásárolt szelvényeket.</br>
-  <b>történet:</b></br>
-  ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9perny%C5%91terv/Statisztika.png)</br>
-  A képernyőn megjelenik egy táblanézet. A táblázatban a felhasználó számlatörténtete
-  jelenik meg, amit az adatbázisból kérün le.</br>
   <b>statisztika:</b></br>
   ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9perny%C5%91terv/T%C3%B6rt%C3%A9net.png)</br>
   **SZERKESZTÉSRE VÁR**</br>
@@ -171,11 +167,6 @@ pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen m
 még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a
 vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló
 összeg az új összeg legyen megjelenítve.
-  * <b>történet:</b>
-Táblázatban jelenjenek meg az addig lezajlott tranzakciók. A táblában a következő
-adatok szerepeljenek: a tranzakció dátuma, a szelvények száma, fizetett összeg,
-nyereség (ha veszített, az aktuális tranzakcióban vásárolt szelvényeken, akkor 
-a vesztett pénzösszeg jelenjen meg "-" jelzővel).
 * <b>statisztika:</b>
 A képernyőn meg kell hogy jelenjenek a következő adatok: összesen eddig
 megvásárolt szelvények száma, összesen eddig elköltött pénz, a nyertes szelvények
