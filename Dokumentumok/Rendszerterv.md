@@ -207,7 +207,7 @@ Ezeknek a leírását és a teszt végeredményét pedig a következő tábláza
 |signUp|A regisztrált adatokat lementi az adatbázisba|Hiba nélkül egy használható felhasználót hoz létre|Működik|
 |LotteryController|A program központi és funkciós paneleit kezeli|Minden funkcióra el lehessen jutni és visszatérni|Működik|
 |StatisticsController|Két oszlopdiagrammon kimutatja a játékos statisztikáit|Valós időben frissülő és pontos kimutatás|Működik|
-|Ticket|A kisorsolt szelvény alapján megállapítja hány nyerő szám van|Visszadja a nyerő számok mennyiségét|Működik|
+|Ticket|A kisorsolt szelvény alapján megállapítja hány nyerő szám van|Visszadja a nyerő számok mennyiségét| Működik|
 
 
 * <b>Rendszerteszt</b></br>

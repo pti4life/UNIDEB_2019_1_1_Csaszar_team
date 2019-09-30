@@ -19,7 +19,7 @@ public class StatisticsController implements Initializable {
 
     Database db = Database.getDatabaseInstance();
 
-    public static String userName = "";
+    public static String userName = LoginSystemController.userName;
 
     public int bought_tickets=db.getBoughtTickets(userName), winner_tickets=db.getWinnerTickets(userName);
     public  int loser_tickets=bought_tickets-winner_tickets;
