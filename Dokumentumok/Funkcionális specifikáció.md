@@ -75,10 +75,6 @@ valamint egy gomb "Vásárlás" felirattal. Ha a felhasználó megnyomja, meg ke
 erősítenie a felugró ablakon. Amint megerősítette, megjelenik a "Sorsolás
 gomb". Ezt megnyomva generálunk a beállításoknak megfelelő mennyiségű számot. 
 Majd megjelenik, hogy nyert-e a felhasználó.
-* A "történet" ablak tartalmaz egy táblát, amit az adatbázisból lekért adatokkal
-tölt fel. A táblázatnak négy oszlopa van, amik a következők: tranzakció dátum,
-megvásárolt szelvények száma, szelvényekért fizetett összeg, nyereség(lehet,
-negatív).
 * A "statisztika" ablak a következő adatokat tartalmazza: az összes eddig
 megvásárolt szelvény száma, az összes eddig elköltött pénz, a nyertes szelvények
 száma, a vesztes szelvények száma. Ha marad idő, kördiagrammal megjelíteni,
