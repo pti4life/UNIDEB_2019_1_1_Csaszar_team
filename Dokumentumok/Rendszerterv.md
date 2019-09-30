@@ -192,6 +192,7 @@ adja meg, akkor jelenjen meg mennyi esélye van nyerni.
 A Regisztráció és a bejelentkezésért felelős osztály Modell és Controller osztályai UML Diagramban:
 ![](https://github.com/pti4life/UNIDEB_2019_1_1_Csaszar_team/blob/master/Dokumentumok/K%C3%A9pek/UML_REG_LOGIN.jpg?raw=true)
 
+
 ## 11. Tesztterv: 
 
 * <b>Komponensteszt</b></br>
@@ -202,7 +203,11 @@ Ezeknek a leírását és a teszt végeredményét pedig a következő tábláza
 
 |Metódus neve   |Metódus leírása   |Elvárt működés   |Teszt állapota   |
 |---------------|------------------|-----------------|-----------------|
-|  login |Bejelentkezési adatokat az adatbázisból lekéri és kiértékeli |Minden eshetőségre van elágazás |Nincs megkezdve   |
+|  login |Bejelentkezési adatokat az adatbázisból lekéri és kiértékeli |Hiba nélkül beléptet a programba |Működik   |
+|signUp|A regisztrált adatokat lementi az adatbázisba|Hiba nélkül egy használható felhasználót hoz létre|Működik|
+|LotteryController|A program központi és funkciós paneleit kezeli|Minden funkcióra el lehessen jutni és visszatérni|Működik|
+|StatisticsController|Két oszlopdiagrammon kimutatja a játékos statisztikáit|Valós időben frissülő és pontos kimutatás|Működik|
+|Ticket|A kisorsolt szelvény alapján megállapítja hány nyerő szám van|Visszadja a nyerő számok mennyiségét|Működik|
 
 
 * <b>Rendszerteszt</b></br>
