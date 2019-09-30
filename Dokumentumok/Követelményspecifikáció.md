@@ -64,11 +64,6 @@ Fülek leírása:
 * új szelvény:
  Kérje be a program, hogy: hány darab szelvényt venne a felhasználó, mennyi pénzbe fog ez kerülni, valamint mennyi pénz áll a rendelkezésére. Legyen megtalálható még egy vétel gomb, amit megnyomva kérdezzen rá a program, hogy biztos-e a vételben a felhasználó. Ha igennel válaszol, akkor a rendelkezésre álló összeg az új összeg legyen megjelenítve.
 
-* történet: Táblázatban jelenjenek meg az addig lezajlott tranzakciók. A táblában a következő
-adatok szerepeljenek: a tranzakció dátuma, a szelvények száma, fizetett összeg,
-nyereség (ha veszített, az aktuális tranzakcióban vásárolt szelvényeken, akkor 
-a vesztett pénzösszeg jelenjen meg "-" jelzővel).
-
 * statisztika:
 A képernyőn meg kell hogy jelenjenek a következő adatok: összesen eddig
 megvásárolt szelvények száma, összesen eddig elköltött pénz, a nyertes szelvények
