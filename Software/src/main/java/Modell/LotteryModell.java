@@ -12,6 +12,7 @@ public class LotteryModell {
     }
 
     public static int getTotalPrice(String ticket) {
+        System.out.println("TICKET: "+ticket);
         int result = 0;
 
         try {
